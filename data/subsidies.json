@@ -1,13 +1,21 @@
 {
   "meta": {
-    "updated": "2026-11-10T20:14+09:00",
+    "updated": "2026-11-11T12:48+09:00",
     "initial": "2026-11-10",
-    "count": 62,
+    "source_first_run": {
+      "city-kosodate-josei": "2026-11-11",
+      "city-kosodate": "2026-11-11",
+      "city-korei": "2026-11-11",
+      "city-nogyo": "2026-11-11",
+      "jgrants": "2026-11-11"
+    },
+    "count": 164,
     "sources": [
       {
         "id": "city-hojokin",
         "name": "薩摩川内市「市が交付する補助金」",
         "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/index.html",
+        "type": "list",
         "ok": true,
         "count": 46,
         "error": null
@@ -16,6 +24,7 @@
         "id": "city-koyo",
         "name": "薩摩川内市「補助金・助成金（雇用・就業）」",
         "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/index.html",
+        "type": "list",
         "ok": true,
         "count": 4,
         "error": null
@@ -24,6 +33,7 @@
         "id": "city-kigyo",
         "name": "薩摩川内市「企業・商工事業者支援」",
         "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/index.html",
+        "type": "list",
         "ok": true,
         "count": 5,
         "error": null
@@ -32,63 +42,78 @@
         "id": "city-iju",
         "name": "薩摩川内市「移住・定住 助成・支援」",
         "url": "https://www.city.satsumasendai.lg.jp/ijuteiju/iju_shien/josei_shien/index.html",
+        "type": "list",
         "ok": true,
         "count": 1,
         "error": null
       },
       {
+        "id": "city-kosodate-josei",
+        "name": "薩摩川内市「子育て：助成」",
+        "url": "https://www.city.satsumasendai.lg.jp/kosodate_kyoiku/kosodate/1/index.html",
+        "type": "list",
+        "ok": true,
+        "count": 3,
+        "error": null
+      },
+      {
+        "id": "city-kosodate",
+        "name": "薩摩川内市「子育て支援・保育」",
+        "url": "https://www.city.satsumasendai.lg.jp/kosodate_kyoiku/kosodate/index.html",
+        "type": "list",
+        "ok": true,
+        "count": 4,
+        "error": null
+      },
+      {
+        "id": "city-korei",
+        "name": "薩摩川内市「高齢・介護福祉」",
+        "url": "https://www.city.satsumasendai.lg.jp/iryo_kenko_fukushi/koreishafukushi_kaigo/index.html",
+        "type": "list",
+        "ok": true,
+        "count": 1,
+        "error": null
+      },
+      {
+        "id": "city-nogyo",
+        "name": "薩摩川内市「農業：六次産業化」",
+        "url": "https://www.city.satsumasendai.lg.jp/soshiki/1041/2/1/1/index.html",
+        "type": "list",
+        "ok": true,
+        "count": 5,
+        "error": null
+      },
+      {
         "id": "cci-zyosei",
         "name": "川内商工会議所「各種補助金」",
-        "url": "https://sendai-cci.jp/index.php/news/zyosei/",
+        "url": "https://www.sendai-cci.jp/index.php/news/zyosei/",
+        "type": "list",
         "ok": true,
         "count": 6,
         "error": null
+      },
+      {
+        "id": "jgrants",
+        "name": "Jグランツ（国・県などの補助金。鹿児島県と全国が対象のもの）",
+        "url": "https://api.jgrants-portal.go.jp/exp/v1/public/subsidies",
+        "type": "jgrants",
+        "ok": true,
+        "count": 89,
+        "error": null
+      },
+      {
+        "id": "cci-event",
+        "name": "川内商工会議所「講演会・検定・行事」",
+        "url": "https://www.sendai-cci.jp/index.php/news/event/",
+        "type": "events",
+        "ok": true,
+        "count": 12,
+        "error": null
       }
-    ]
+    ],
+    "alerts": []
   },
   "items": [
-    {
-      "title": "UIJターン者の家賃を支援します",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/18610.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin",
-        "city-koyo"
-      ],
-      "categories": [
-        "移住・定住"
-      ],
-      "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "がけ地近接等危険住宅移転事業補助金のご案内",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9024.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "住まい・空き家",
-        "防災"
-      ],
-      "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
     {
       "title": "中心市街地出店支援補助金のご案内",
       "labels": [
@@ -96,6 +121,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13608.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin",
         "city-kigyo"
@@ -104,133 +130,13 @@
         "創業・お店"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "令和7年度市民活動支援補助金（スマイル連携コース）（スマイル育成コース）を活用して事業を行う団体等を募集します",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16772.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "地域・市民活動"
-      ],
-      "target": "団体向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "令和8年度 建設業等人材確保支援補助金を交付します",
-      "labels": [
-        "随時受付中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19352.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin",
-        "city-kigyo"
-      ],
-      "categories": [
-        "仕事・人材"
-      ],
-      "target": "事業者向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "令和8年度 快適環境づくり補助金",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9018.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "環境・エネルギー"
-      ],
-      "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "令和8年度「地球にやさしい環境整備事業補助金」(蓄電システム、ZEH)のご案内",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10281.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "環境・エネルギー"
-      ],
-      "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "令和8年度薩摩川内市創業支援事業補助金を募集します",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10523.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin",
-        "city-iju"
-      ],
-      "categories": [
-        "創業・お店"
-      ],
-      "target": "事業者向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "危険ブロック塀等解体撤去促進事業補助金のご案内",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9015.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "住まい・空き家",
-        "防災"
-      ],
-      "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "period": "申込期限：令和8年12月11日(金曜日)まで",
+      "deadline": "2026-12-11",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -240,6 +146,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/13914.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-koyo"
       ],
@@ -247,130 +154,40 @@
         "仕事・人材"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-27",
+      "period": "申請期限：令和9年1月31日まで",
+      "deadline": "2027-01-31",
+      "amount": "上限50万円",
+      "rate": "3分の2",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
-      "title": "地域移定住促進事業補助金",
+      "title": "危険ブロック塀等解体撤去促進事業補助金のご案内",
       "labels": [
         "募集中"
       ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9021.html",
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9015.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
       "categories": [
-        "移住・定住"
+        "住まい・空き家",
+        "防災"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "子育て応援駐車場の整備費用の一部を助成します",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19647.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "子育て・結婚・学び"
-      ],
-      "target": "事業者向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "家庭用飲用井戸等整備支援事業補助金を交付します",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/14196.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "住まい・空き家"
-      ],
-      "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "川内港海外展開支援補助金を交付します",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13868.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "企業・経営"
-      ],
-      "target": "事業者向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "市スポーツ振興基金補助金のご案内",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13815.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "地域・市民活動"
-      ],
-      "target": "団体向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "市内で婚活イベントを実施する団体への補助制度があります",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13726.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "子育て・結婚・学び"
-      ],
-      "target": "団体向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-10",
+      "deadline": "2027-03-15",
+      "period": "令和9年3月15日(月曜日)までに、実績報告書の提出が可能であること。",
+      "amount": "上限20万円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -380,6 +197,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19719.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin",
         "city-kigyo"
@@ -388,51 +206,12 @@
         "創業・お店"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "文化振興活動出場補助金のご案内",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19753.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "地域・市民活動"
-      ],
-      "target": "団体向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "新規及び後継者漁業就業者支援事業補助金のご案内",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/14230.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "仕事・人材",
-        "農林水産"
-      ],
-      "target": "事業者向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "period": "提出期限：改装工事が完了した日から20日以内または令和9年3月15日のいずれか早い日",
+      "deadline": "2027-03-15",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -442,6 +221,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9026.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -449,31 +229,14 @@
         "住まい・空き家"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "漁業従事者支援事業補助金のご案内",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/11624.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin",
-        "city-iju"
-      ],
-      "categories": [
-        "農林水産"
-      ],
-      "target": "事業者向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-06-05",
+      "period": "受付期間：および場所",
+      "deadline": "2027-03-15",
+      "amount": "上限20万円",
+      "rate": "100分の20",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -483,6 +246,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/6438.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin",
         "city-kigyo"
@@ -492,10 +256,306 @@
         "企業・経営"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "period": "申請期限：費用を支払った日または上記活動が終了した日のいずれか遅い日から3か月以内または令和9年3月31日のいずれか早い日まで",
+      "deadline": "2027-03-31",
+      "amount": "上限10万円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "UIJターン者の家賃を支援します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/18610.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin",
+        "city-koyo"
+      ],
+      "categories": [
+        "移住・定住"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-27",
+      "period": "申請期限：補助対象となった日(補助基準日)から6ヶ月経過した日の翌日から3ヶ月以内",
+      "amount": "上限2万円",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "がけ地近接等危険住宅移転事業補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9024.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家",
+        "防災"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-10",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和7年度市民活動支援補助金（スマイル連携コース）（スマイル育成コース）を活用して事業を行う団体等を募集します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16772.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "地域・市民活動"
+      ],
+      "target": "団体向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2025-11-11",
+      "rate": "10分の5",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度 快適環境づくり補助金",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9018.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2025-11-30",
+      "period": "提出期限：となります",
+      "rate": "4分の3",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度「地球にやさしい環境整備事業補助金」(蓄電システム、ZEH)のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10281.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度薩摩川内市創業支援事業補助金を募集します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10523.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin",
+        "city-iju"
+      ],
+      "categories": [
+        "創業・お店"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-15",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "地域移定住促進事業補助金",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9021.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "移住・定住"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-27",
+      "amount": "上限50万円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "子育て応援駐車場の整備費用の一部を助成します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19647.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-22",
+      "amount": "補助金額 15万円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "家庭用飲用井戸等整備支援事業補助金を交付します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/14196.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "amount": "上限40万円",
+      "rate": "3分の1",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "川内港海外展開支援補助金を交付します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13868.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2024-05-29",
+      "amount": "上限20万円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "市スポーツ振興基金補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13815.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "地域・市民活動"
+      ],
+      "target": "団体向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "period": "申請期間：は、大会出場が決定した日から大会終了日の2箇月後までとなります",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "市内で婚活イベントを実施する団体への補助制度があります",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13726.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "団体向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-03",
+      "period": "締切：は、事業(イベント)実施日の20日前となります",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "文化振興活動出場補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19753.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "地域・市民活動"
+      ],
+      "target": "団体向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2025-04-01",
+      "amount": "補助額 300,000円",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -505,6 +565,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/21382.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-kigyo"
       ],
@@ -512,10 +573,10 @@
         "創業・お店"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -525,6 +586,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13733.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin",
         "city-iju"
@@ -533,10 +595,12 @@
         "子育て・結婚・学び"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "period": "申請期限：となりますので、ご注意ください",
+      "amount": "上限60万円",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -546,6 +610,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19851.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -553,10 +618,12 @@
         "企業・経営"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-05-26",
+      "amount": "上限100万円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -566,6 +633,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/11741.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -573,10 +641,11 @@
         "農林水産"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-05-28",
+      "amount": "補助額 165,000円",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -586,6 +655,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13720.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin",
         "city-iju"
@@ -594,10 +664,13 @@
         "子育て・結婚・学び"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-03",
+      "period": "申請期限：は、定期券等の有効期間が満了する日までとします",
+      "amount": "補助額 7,400円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -607,6 +680,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19690.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -614,30 +688,12 @@
         "観光"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "募集中"
-    },
-    {
-      "title": "離島高校生の就学を支援します",
-      "labels": [
-        "募集中"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16871.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "子育て・結婚・学び"
-      ],
-      "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-30",
+      "amount": "補助額 100万円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
@@ -647,97 +703,2139 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19864.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
-        "city-hojokin"
+        "city-hojokin",
+        "city-korei"
       ],
       "categories": [
         "福祉・健康"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-05-29",
+      "amount": "上限2万円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
       "status": "募集中"
     },
     {
-      "title": "<東京圏から移住される皆様>かごしまUIJターン移住支援金",
+      "title": "[3次公募]中小企業成長加速化補助金",
       "labels": [],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9011.html",
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDdjfMAD",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/12",
+      "deadline": "2026-11-12",
+      "amount": "上限5億円",
+      "area": "全国",
+      "institution": "中小企業成長加速化補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【令和8年度】二酸化炭素排出抑制対策事業費等補助金 (地域共生型廃棄物発電等導入促進事業 (うち地域の廃棄物を活用した地域エネルギー創出事業))(3次公募)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003qYNFUA2",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/13",
+      "deadline": "2026-11-13",
+      "area": "全国",
+      "institution": "令和８年度二酸化炭素排出抑制対策事業費等補助金 （地域共生型廃棄物発電等導入促進事業 （うち地域の廃棄物を活用した地域エネルギー創出事業））",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【鹿児島県】令和8年度_中小企業等海外展開支援事業費補助金(海外出願支援事業)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDZXbMAP",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/13",
+      "deadline": "2026-11-13",
+      "amount": "上限300万円",
+      "area": "鹿児島県",
+      "institution": "中小企業等海外展開支援事業費補助金（海外出願支援事業）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度_Scope3排出量削減のための企業間連携による省CO2設備投資促進事業",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDNDnMAP",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/13",
+      "deadline": "2026-11-13",
+      "amount": "上限15億円",
+      "area": "全国",
+      "institution": "脱炭素成長型経済構造移行推進対策費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "「GX分野のディープテック・スタートアップへの事業開発支援事業(GX_UPP事業)」の第3回公募",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003j5GLUAY",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/17",
+      "deadline": "2026-11-17",
+      "area": "全国",
+      "institution": "P25001_GX 分野のディープテック・スタートアップへの事業開発支援事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【三次公募】令和8年度 天然ガス利用設備による強靱性向上対策事業費補助金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003ENsfUAG",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/20",
+      "deadline": "2026-11-20",
+      "area": "全国",
+      "institution": "天然ガス利用設備による強靱性向上対策事業費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "エイジフレンドリー補助金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYbNMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/20",
+      "deadline": "2026-11-20",
+      "amount": "上限100万円",
+      "area": "全国",
+      "institution": "エイジフレンドリー補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和7年度(補正予算)地域脱炭素実現に向けた具体的施策実装支援事業(四次公募)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDd3OMAT",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/20",
+      "deadline": "2026-11-20",
+      "area": "全国",
+      "institution": "二酸化炭素排出抑制対策事業費等補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度地域脱炭素実現に向けた具体的施策実装支援事業",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDd3YMAT",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/20",
+      "deadline": "2026-11-20",
+      "area": "全国",
+      "institution": "二酸化炭素排出抑制対策事業費等補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【事前着手】令和8年度排出削減が困難な産業におけるエネルギー・製造プロセス転換支援事業(二次公募)(事業II/紙パルプ・化学・セメント)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003myubUAA",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/27",
+      "deadline": "2026-11-27",
+      "area": "全国",
+      "institution": "令和8年度排出削減が困難な産業におけるエネルギー・製造プロセス転換支援事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和7年度補正 ディマンドリスポンスの拡大に向けたIoT化推進事業",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY5GMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/27",
+      "deadline": "2026-11-27",
+      "amount": "上限2,000万円",
+      "area": "全国",
+      "institution": "令和７年度補正 「再生可能エネルギー導入拡大・分散型エネルギーリソース導入支援等事業費補助金」ディマンドリスポンスの拡大に向けたIoT化推進事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度排出削減が困難な産業におけるエネルギー・製造プロセス転換支援事業(二次公募)(事業II/紙パルプ・化学・セメント)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003mzyjUAA",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/27",
+      "deadline": "2026-11-27",
+      "area": "全国",
+      "institution": "令和8年度排出削減が困難な産業におけるエネルギー・製造プロセス転換支援事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【令和8年度】働き方改革推進支援助成金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYEGMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/30",
+      "deadline": "2026-11-30",
+      "amount": "上限1,370万円",
+      "area": "全国",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度SDS電子化補助金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDderMAD",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/30",
+      "deadline": "2026-11-30",
+      "amount": "上限100万円",
+      "area": "全国",
+      "institution": "SDS電子化補助金事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度二酸化炭素排出抑制対策事業費等補助金(運輸部門等の脱炭素化に向けた先進的システム社会実装促進事業のうち、農業機械の電動化促進事業)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDa1gMAD",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "農林水産",
+        "環境・エネルギー"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/30",
+      "deadline": "2026-11-30",
+      "amount": "上限7,200万円",
+      "area": "全国",
+      "institution": "令和８年度二酸化炭素排出抑制対策事業費等補助金（運輸部門等の脱炭素化に向けた先進的システム社会実装促進事業のうち、農業機械の電動化促進事業）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "成田空港の次代を担う若者の奨学金返還支援事業補助金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003aZqLUAU",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "仕事・人材"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/30",
+      "deadline": "2026-11-30",
+      "area": "全国",
+      "institution": "成田空港の次代を担う若者の奨学金返還支援事業補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "産業車両等の脱炭素化促進事業のうち、港湾における脱炭素化促進事業(二酸化炭素排出抑制対策事業費等補助金)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDZ04MAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/30",
+      "deadline": "2026-11-30",
+      "amount": "上限1億円",
+      "area": "全国",
+      "institution": "令和８年度　産業車両等の脱炭素化促進事業のうち、港湾における脱炭素化促進事業（二酸化炭素排出抑制対策事業費等補助金）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "産業車両等の脱炭素化促進事業のうち、空港における脱炭素化促進事業1 空港における再エネ活用型GPU等導入支援(二酸化炭素排出抑制対策事業費等補助金)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYzVMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/30",
+      "deadline": "2026-11-30",
+      "amount": "上限1.5億円",
+      "area": "全国",
+      "institution": "令和８年度　産業車両等の脱炭素化促進事業のうち、空港における脱炭素化促進事業①空港における再エネ活用型GPU等導入支援（二酸化炭素排出抑制対策事業費等補助金）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "産業車両等の脱炭素化促進事業のうち、空港における脱炭素化促進事業2空港におけるEV・FCV型車両導入事業(二酸化炭素排出抑制対策事業費等補助金)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDZDHMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/30",
+      "deadline": "2026-11-30",
+      "area": "全国",
+      "institution": "令和８年度　産業車両等の脱炭素化促進事業のうち、空港における脱炭素化促進事業②空港におけるEV・FCV型車両導入事業（二酸化炭素排出抑制対策事業費等補助金）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "産業車両等の脱炭素化促進事業のうち、空港における脱炭素化促進事業3空港におけるEV・FCV型車両改造事業(二酸化炭素排出抑制対策事業費等補助金)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDZ1GMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/11/30",
+      "deadline": "2026-11-30",
+      "area": "全国",
+      "institution": "令和８年度　産業車両等の脱炭素化促進事業のうち、空港における脱炭素化促進事業③空港におけるEV・FCV型車両改造事業（二酸化炭素排出抑制対策事業費等補助金）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【農林水産省】中山間地域所得確保推進事業",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYDCMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "農林水産"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/01",
+      "deadline": "2026-12-01",
+      "amount": "上限500万円",
+      "area": "全国",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度ゼロエミッション船等の導入支援事業",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDbyjMAD",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/03",
+      "deadline": "2026-12-03",
+      "area": "全国",
+      "institution": "脱炭素成長型経済構造移行推進対策費補助金（ゼロエミッション船等の導入支援事業）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【事前着手】令和8年度排出削減が困難な産業におけるエネルギー・製造プロセス転換支援事業(事業I/鉄鋼)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003zgNCUAY",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/11",
+      "deadline": "2026-12-11",
+      "area": "全国",
+      "institution": "令和8年度排出削減が困難な産業におけるエネルギー・製造プロセス転換支援事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和7年度補正「次世代革新炉の開発・建設に向けた技術開発・サプライチェーン構築支援事業補助金」【三次公募】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ0000049swXUAQ",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/11",
+      "deadline": "2026-12-11",
+      "amount": "上限27億円",
+      "area": "全国",
+      "institution": "次世代革新炉の開発・建設に向けた技術開発・サプライチェーン構築支援事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度排出削減が困難な産業におけるエネルギー・製造プロセス転換支援事業(事業I/鉄鋼)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003znYLUAY",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/11",
+      "deadline": "2026-12-11",
+      "area": "全国",
+      "institution": "令和8年度排出削減が困難な産業におけるエネルギー・製造プロセス転換支援事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【令和8年度】INPIT外国出願補助金(中間手続補助)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDXmVMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/14",
+      "deadline": "2026-12-14",
+      "amount": "上限50万円",
+      "area": "全国",
+      "institution": "INPIT外国出願補助金（中間手続補助）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "小規模事業者持続化補助金<創業型> 第4回受付締切",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003kEuHUAU",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "創業・お店",
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/15",
+      "deadline": "2026-12-15",
+      "amount": "上限200万円",
+      "area": "全国",
+      "institution": "小規模事業者持続化補助金＜創業型＞",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "INPIT事業再編計画支援事業補助金(令和8年度)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYBxMAP",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/18",
+      "deadline": "2026-12-18",
+      "amount": "上限650万円",
+      "area": "全国",
+      "institution": "INPIT事業再編計画支援事業補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【令和8年度】PCB汚染変圧器高効率化補助金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYC7MAP",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/18",
+      "deadline": "2026-12-18",
+      "amount": "上限100万円",
+      "area": "全国",
+      "institution": "令和８年度ＰＣＢ汚染変圧器高効率化補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "交通システムの省CO2 化に向けた設備整備事業(鉄道事業等におけるネットワーク型低炭素化促進事業)(三次公募)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003cAFxUAM",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/23",
+      "deadline": "2026-12-23",
+      "area": "全国",
+      "institution": "二酸化炭素排出抑制対策事業費等補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度_グリーンスローモビリティ等導入促進事業(三次公募)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WfQ000003rYGLUA2",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/23",
+      "deadline": "2026-12-23",
+      "area": "全国",
+      "institution": "二酸化炭素排出抑制対策事業費等補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度 脱炭素成長型経済構造移行推進対策費補助金 (業務用建築物の脱炭素改修加速化事業)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDa1bMAD",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/24",
+      "deadline": "2026-12-24",
+      "amount": "上限10億円",
+      "area": "全国",
+      "institution": "脱炭素成長型経済構造移行推進対策費補助金（業務用建築物の脱炭素改修加速化事業）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【倉敷市】実証実験サポート事業",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY6KMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/28",
+      "deadline": "2026-12-28",
+      "amount": "上限50万円",
+      "area": "全国",
+      "institution": "実証実験補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【経済産業省】ものづくり・商業・サービス生産性向上促進補助金(20次締切)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDVkeMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/28",
+      "deadline": "2026-12-28",
+      "amount": "上限3,500万円",
+      "area": "全国",
+      "institution": "ものづくり補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "在宅人工呼吸器使用難病患者非常用電源設備整備事業補助金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDHQZMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2026/12/28",
+      "deadline": "2026-12-28",
+      "area": "全国",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和7年度補正予算 商用車等の電動化促進事業",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDWZ9MAP",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/01/15",
+      "deadline": "2027-01-15",
+      "amount": "上限175億円",
+      "area": "全国",
+      "institution": "脱炭素成長型経済構造移行推進対策費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "2026年度「ディープテック・スタートアップ支援基金/国際共同研究開発」の公募",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDeC1MAL",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/01/20",
+      "deadline": "2027-01-20",
+      "area": "全国",
+      "institution": "P23021_ディープテック・スタートアップ支援基金／国際共同研究開発",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "高度安全機械等導入支援補助金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYq2MAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/01/28",
+      "deadline": "2027-01-28",
+      "area": "全国",
+      "institution": "高度安全機械等導入支援補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【令和8年度】ハイブリッド及び天然ガストラック・バス導入支援事業(環境配慮型先進トラック・バス導入加速事業)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDdPBMA1",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/01/29",
+      "deadline": "2027-01-29",
+      "area": "全国",
+      "institution": "令和８年度ハイブリッド連節バス導入支援事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和7年度(補正) 商用車等の電動化促進事業(建設機械)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDXRpMAP",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/01/29",
+      "deadline": "2027-01-29",
+      "amount": "上限143,100万円",
+      "area": "全国",
+      "institution": "脱炭素成長型経済構造移行推進対策費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度_低炭素型ディーゼルトラック普及加速化事業",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDZDCMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/01/29",
+      "deadline": "2027-01-29",
+      "area": "全国",
+      "institution": "二酸化炭素排出抑制対策事業費等補助金 環境配慮型先進トラック・バス導入加速事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度子育て【宅配ボックス】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYSPMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/01/29",
+      "deadline": "2027-01-29",
+      "area": "全国",
+      "institution": "子育て支援型共同住宅推進事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度_受動喫煙防止対策助成金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDeRiMAL",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/01/31",
+      "deadline": "2027-01-31",
+      "amount": "上限100万円",
+      "area": "全国",
+      "institution": "受動喫煙防止対策助成金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度子育て【建設型】初年度",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYSAMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/02/26",
+      "deadline": "2027-02-26",
+      "area": "全国",
+      "institution": "子育て支援型共同住宅推進事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度子育て【改修型】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYSFMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/02/26",
+      "deadline": "2027-02-26",
+      "area": "全国",
+      "institution": "子育て支援型共同住宅推進事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度都市ガス分野の災害対応・レジリエンス強化に係る支援事業費補助金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDc0YMAT",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "防災"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/02/26",
+      "deadline": "2027-02-26",
+      "amount": "上限13,050.2万円",
+      "area": "全国",
+      "institution": "令和８年度都市ガス分野の災害対応・レジリエンス強化にかかる支援事業費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和6年度補正予算 商用車等の電動化促進事業",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDL8JMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/02/28",
+      "deadline": "2027-02-28",
+      "amount": "上限295億円",
+      "area": "全国",
+      "institution": "脱炭素成長型経済構造移行推進対策費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度SDGsファイナンス支援事業補助金(グリーンボンド/グリーンローン)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDd5XMAT",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/19",
+      "deadline": "2027-03-19",
+      "amount": "上限200万円",
+      "area": "全国",
+      "institution": "令和８年度SDGsファイナンスに係る補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度SDGsファイナンス支援事業補助金(ソーシャルボンド/ソーシャルローン)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDdA6MAL",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/19",
+      "deadline": "2027-03-19",
+      "amount": "上限300万円",
+      "area": "全国",
+      "institution": "令和８年度SDGsファイナンスに係る補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度SDGsファイナンス支援事業補助金(トランジションボンド/トランジションローン)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDd9xMAD",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/19",
+      "deadline": "2027-03-19",
+      "amount": "上限100万円",
+      "area": "全国",
+      "institution": "令和８年度SDGsファイナンスに係る補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度SDGsファイナンス支援事業補助金(ブルーボンド/ブルーローン)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDd9wMAD",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/19",
+      "deadline": "2027-03-19",
+      "amount": "上限500万円",
+      "area": "全国",
+      "institution": "令和８年度SDGsファイナンスに係る補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度SDGsファイナンス支援事業補助金(個人向けSDGs預金)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDdABMA1",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/19",
+      "deadline": "2027-03-19",
+      "amount": "上限100万円",
+      "area": "全国",
+      "institution": "令和８年度SDGsファイナンスに係る補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【経済産業省】ものづくり・商業・サービス生産性向上促進補助金(21次締切)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDX4vMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/23",
+      "deadline": "2027-03-23",
+      "amount": "上限4,000万円",
+      "area": "全国",
+      "institution": "ものづくり補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度東京港物流効率化等事業補助金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY72MAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/30",
+      "deadline": "2027-03-30",
+      "amount": "上限27,200万円",
+      "area": "全国",
+      "institution": "令和８年度東京港物流効率化等事業補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【内閣府】地方創生に資する利子補給制度(金融支援)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYCrMAP",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "area": "全国",
+      "institution": "地方創生支援利子補給金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山の鉱害防止に係るエネルギー使用合理化事業費補助金(令和8年度)【中国監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYvnMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限8,000万円",
+      "area": "全国",
+      "institution": "休廃止鉱山の鉱害防止に係るエネルギー使用合理化事業費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山の鉱害防止に係るエネルギー使用合理化事業費補助金(令和8年度)【北海道監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYviMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限8,000万円",
+      "area": "全国",
+      "institution": "休廃止鉱山の鉱害防止に係るエネルギー使用合理化事業費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和7年度補正)【中国監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY91MAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限112,381.1万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和7年度補正)【中部監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY8DMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限112,381.1万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和7年度補正)【九州監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY9BMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限112,381.1万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和7年度補正)【北海道監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY7tMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限112,381.1万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和7年度補正)【四国支部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY96MAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限112,381.1万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和7年度補正)【東北支部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY7yMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限112,381.1万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和7年度補正)【近畿支部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY89MAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限112,381.1万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和7年度補正)【関東監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDY88MAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限112,381.1万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和8年度当初)【中国監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYuhMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限221,284.9万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和8年度当初)【中部監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYuXMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限221,284.9万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和8年度当初)【九州監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYurMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限221,284.9万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和8年度当初)【北海道監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYu3MAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限221,284.9万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和8年度当初)【四国支部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYumMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限221,284.9万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和8年度当初)【東北支部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYuIMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限221,284.9万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和8年度当初)【近畿支部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYucMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限221,284.9万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "休廃止鉱山鉱害防止等工事費補助金(令和8年度当初)【関東監督部】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYuSMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限221,284.9万円",
+      "area": "全国",
+      "institution": "休廃止鉱山鉱害防止等工事費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "地上基幹放送ネットワーク整備等事業(令和7年度補正予算及び令和8年度当初予算)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDXORMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "area": "全国",
+      "institution": "放送ネットワーク整備支援事業費補助金（地上基幹放送ネットワーク整備事業）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "地上基幹放送等に関する耐災害性強化支援事業(令和8年度公募)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDXFjMAP",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "防災"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "area": "全国",
+      "institution": "地上基幹放送等に関する耐災害性強化支援事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "廃止石油坑井封鎖事業費補助金(令和8年度:関東東北産業保安監督部)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYSKMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限13,328万円",
+      "area": "全国",
+      "institution": "廃止石油坑井封鎖事業費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "廃止石油坑井封鎖事業費補助金(令和8年度:関東東北産業保安監督部東北支部)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYSUMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "amount": "上限13,328万円",
+      "area": "全国",
+      "institution": "廃止石油坑井封鎖事業費補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "携帯電話等エリア整備事業",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDOsKMAX",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "area": "全国",
+      "institution": "無線システム普及支援事業費等事業（携帯電話等エリア整備事業）",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "民放ラジオ難聴解消支援事業(令和8年度公募)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDXENMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/03/31",
+      "deadline": "2027-03-31",
+      "area": "全国",
+      "institution": "民放ラジオ難聴解消支援事業",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【経済産業省】ものづくり・商業・サービス生産性向上促進補助金(22次締切)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDYimMAH",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/06/30",
+      "deadline": "2027-06-30",
+      "area": "全国",
+      "institution": "ものづくり補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "[第六回以降]事業再構築補助金(共同申請者)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0W2x000007Cos5EAC",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2027/12/31",
+      "deadline": "2027-12-31",
+      "amount": "上限1.5億円",
+      "area": "全国",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "【経済産業省】ものづくり・商業・サービス生産性向上促進補助金(23次締切)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDdtMMAT",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2028/03/31",
+      "deadline": "2028-03-31",
+      "area": "全国",
+      "institution": "ものづくり補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "事業再構築補助金(共同申請_リース会社)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0W5h00000UaiqSEAR",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2028/05/07",
+      "deadline": "2028-05-07",
+      "amount": "上限1.5億円",
+      "area": "全国",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "いわき市診療所開設・承継支援補助金",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDXK4MAP",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2030/03/31",
+      "deadline": "2030-03-31",
+      "amount": "上限3,000万円",
+      "area": "全国",
+      "institution": "いわき市診療所開設・承継支援補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "申請練習用補助金【補助金の支払いはありません】",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDJWIMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2030/03/31",
+      "deadline": "2030-03-31",
+      "amount": "上限1,000万円",
+      "area": "全国",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "[第十回]事業再構築補助金(交付申請等)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0W5h00000GMgXBEA1",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2031/01/21",
+      "deadline": "2031-01-21",
+      "amount": "上限5億円",
+      "area": "全国",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "[第十一回]事業再構築補助金(交付申請等)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0W5h00000UbU66EAF",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2031/06/12",
+      "deadline": "2031-06-12",
+      "amount": "上限1.5億円",
+      "area": "全国",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "[第十二回]事業再構築補助金(交付申請等)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ2000000qhOQMAY",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2032/03/07",
+      "deadline": "2032-03-07",
+      "amount": "上限5億円",
+      "area": "全国",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "[第十三回]事業再構築補助金_促進上乗せ措置(交付申請等)",
+      "labels": [],
+      "url": "https://www.jgrants-portal.go.jp/subsidy/a0WJ200000CDQEJMA5",
+      "org": "国・県など",
+      "source_type": "jgrants",
+      "sources": [
+        "jgrants"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "period": "受付終了：2032/10/29",
+      "deadline": "2032-10-29",
+      "amount": "上限1.5億円",
+      "area": "全国",
+      "institution": "事業再構築補助金",
+      "checked": "2026-11-11",
+      "status": "募集中"
+    },
+    {
+      "title": "離島高校生の就学を支援します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16871.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
       "categories": [
-        "移住・定住"
+        "子育て・結婚・学び"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2025-06-18",
+      "deadline": "2025-07-15",
+      "period": "対象世帯の保護者の皆様に申請書等を郵送しますので、7月15日(火曜日)までに必要書類を添えてお住まいの地域の教育課・地域駐在に提出してください。",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
-      "title": "DXで“人手不足・非効率”を解消し、稼ぐ力を高める/令和8年度 中小企業DX支援事業",
-      "labels": [],
-      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/16941.html",
+      "title": "漁業従事者支援事業補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/11624.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
-        "city-kigyo"
+        "city-hojokin",
+        "city-iju"
       ],
       "categories": [
-        "企業・経営"
+        "農林水産"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2025-04-01",
+      "period": "受付期間：令和8年3月13日(金曜日)まで",
+      "deadline": "2026-03-13",
+      "amount": "上限100万円",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
-      "title": "セーフティネット保証制度のご案内",
-      "labels": [],
-      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/13478.html",
+      "title": "新規及び後継者漁業就業者支援事業補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/14230.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
-        "city-kigyo"
+        "city-hojokin"
       ],
       "categories": [
-        "企業・経営"
+        "仕事・人材",
+        "農林水産"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2025-04-01",
+      "period": "申請期間：令和7年4月1日(火曜日)~令和8年3月31日(火曜日)まで",
+      "deadline": "2026-03-31",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
-      "title": "中小企業災害復旧資金利子補助金",
-      "labels": [],
-      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/6433.html",
+      "title": "令和8年度 建設業等人材確保支援補助金を交付します",
+      "labels": [
+        "随時受付中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19352.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
+        "city-hojokin",
         "city-kigyo"
       ],
       "categories": [
-        "企業・経営",
-        "防災"
+        "仕事・人材"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-30",
+      "period": "受付期間：中の受付結果)",
+      "deadline": "2026-05-29",
+      "amount": "上限15万円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
       "title": "中高生ふるさと就職奨励金（中高生UIJターン就職奨励金）のご案内",
-      "labels": [],
+      "labels": [
+        "募集中"
+      ],
       "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/13936.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-koyo"
       ],
@@ -746,67 +2844,12 @@
         "仕事・人材"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "要確認"
-    },
-    {
-      "title": "事業承継支援について",
-      "labels": [],
-      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/6432.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-kigyo"
-      ],
-      "categories": [
-        "企業・経営"
-      ],
-      "target": "事業者向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "要確認"
-    },
-    {
-      "title": "創業・チャレンジ支援補助金",
-      "labels": [],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19720.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-hojokin"
-      ],
-      "categories": [
-        "創業・お店"
-      ],
-      "target": "事業者向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "要確認"
-    },
-    {
-      "title": "北薩地域UIJターン就労促進事業補助金",
-      "labels": [
-        "県_補助金"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/11971.html",
-      "org": "薩摩川内市",
-      "sources": [
-        "city-koyo"
-      ],
-      "categories": [
-        "移住・定住",
-        "仕事・人材"
-      ],
-      "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-10-01",
+      "period": "申請期限：は10月1日~翌年2月末日までです",
+      "deadline": "2026-10-01",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -814,6 +2857,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19579.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin",
         "city-kigyo"
@@ -822,10 +2866,14 @@
         "企業・経営"
       ],
       "target": "団体向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "period": "申込期限：令和9年1月29日(金曜日)まで",
+      "deadline": "2027-01-29",
+      "amount": "上限20万円",
+      "rate": "3分の2",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -833,6 +2881,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/15942.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-koyo"
       ],
@@ -840,29 +2889,247 @@
         "仕事・人材"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-27",
+      "period": "受付期限：は、令和9年2月19日(金曜日)までです",
+      "deadline": "2027-02-19",
+      "amount": "上限4万円",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
-      "title": "奨学金返還支援制度",
+      "title": "観光業等顧客拡大促進事業補助金のご案内",
       "labels": [],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13483.html",
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16225.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
-        "city-hojokin",
-        "city-koyo"
+        "city-hojokin"
       ],
       "categories": [
-        "仕事・人材"
+        "観光"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "deadline": "2027-03-10",
+      "period": "実績報告書は令和9年3月10日(水曜日)までに提出してください。",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "<東京圏から移住される皆様>かごしまUIJターン移住支援金",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9011.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "移住・定住"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-23",
+      "period": "申請期間：内であっても受付を終了することがあります",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "こしき地域流通販売促進事業補助金のご案内",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/soshiki/1041/2/1/1/3193.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-nogyo"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2023-03-27",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "セーフティネット保証制度のご案内",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/13478.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-kigyo"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-07-29",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "事業承継支援について",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/6432.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-kigyo"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2023-03-27",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "介護給付費の適正化に向けた取り組み（ケアプラン点検）を実施しています",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/iryo_kenko_fukushi/koreishafukushi_kaigo/17906.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-korei"
+      ],
+      "categories": [
+        "福祉・健康"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2026-09-14",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "児童手当",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/kosodate_kyoiku/kosodate/1/6799.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-kosodate-josei"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2025-08-22",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "六次産業化支援事業補助金のご案内",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/soshiki/1041/2/1/1/2997.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-nogyo"
+      ],
+      "categories": [
+        "農林水産"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2026-10-02",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "創業・チャレンジ支援補助金",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19720.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "創業・お店"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "amount": "上限10万円",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "子ども・子育て支援会議",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/kosodate_kyoiku/kosodate/6772.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-kosodate"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2026-07-28",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "子ども・子育て支援新制度について",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/kosodate_kyoiku/kosodate/6771.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-kosodate"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2023-03-27",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "子ども医療費給付事業",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/kosodate_kyoiku/kosodate/1/6797.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-kosodate-josei"
+      ],
+      "categories": [
+        "子育て・結婚・学び",
+        "福祉・健康"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2025-02-14",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -870,6 +3137,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10782.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -878,10 +3146,11 @@
         "移住・定住"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-27",
+      "period": "申請期間：転入日から1年以内",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -889,6 +3158,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10781.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -897,10 +3167,30 @@
         "移住・定住"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-27",
+      "period": "申請期間：転入日から3年以内に申請してください",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "産後ケア応援券",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/kosodate_kyoiku/kosodate/6773.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-kosodate"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-30",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -908,6 +3198,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9022.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -915,10 +3206,10 @@
         "住まい・空き家"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2024-06-10",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -926,6 +3217,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19718.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin",
         "city-kigyo"
@@ -934,10 +3226,11 @@
         "企業・経営"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "period": "申請期間：保証料を支払った日の翌日から起算して1か月以内",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -945,6 +3238,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9014.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -953,10 +3247,10 @@
         "防災"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -964,18 +3258,39 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/ijuteiju/iju_shien/josei_shien/18578.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
-        "city-iju"
+        "city-iju",
+        "city-kosodate"
       ],
       "categories": [
         "子育て・結婚・学び",
         "仕事・人材"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-05-20",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "薩摩川内市地域産物販売拡大連携促進事業補助金のご案内",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/soshiki/1041/2/1/1/2995.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-nogyo"
+      ],
+      "categories": [
+        "その他"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2026-10-02",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -983,6 +3298,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9019.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -991,10 +3307,10 @@
         "子育て・結婚・学び"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-23",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -1002,6 +3318,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10565.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -1011,28 +3328,51 @@
         "仕事・人材"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-27",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
-      "title": "観光業等顧客拡大促進事業補助金のご案内",
+      "title": "赤ちゃんの駅に登録するための設備費用の一部を助成します",
       "labels": [],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16225.html",
+      "url": "https://www.city.satsumasendai.lg.jp/kosodate_kyoiku/kosodate/17635.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
-        "city-hojokin"
+        "city-kosodate"
       ],
       "categories": [
-        "観光"
+        "子育て・結婚・学び",
+        "企業・経営"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2025-09-02",
+      "amount": "補助金額 100万円",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "農商工連携促進事業補助金のご案内",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/soshiki/1041/2/1/1/2998.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-nogyo"
+      ],
+      "categories": [
+        "農林水産"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2026-10-02",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -1040,6 +3380,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/12996.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -1048,10 +3389,30 @@
         "防災"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2024-02-27",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "農林水産物加工機械等導入支援事業補助金のご案内",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/soshiki/1041/2/1/1/3237.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-nogyo"
+      ],
+      "categories": [
+        "農林水産"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2026-10-07",
+      "rate": "2分の1",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
@@ -1059,6 +3420,7 @@
       "labels": [],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19721.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin",
         "city-kigyo"
@@ -1067,17 +3429,39 @@
         "仕事・人材"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-01",
+      "amount": "上限月額5,000円",
+      "checked": "2026-11-11",
+      "status": "要確認"
+    },
+    {
+      "title": "養育医療のご案内",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/kosodate_kyoiku/kosodate/1/6801.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-kosodate-josei"
+      ],
+      "categories": [
+        "子育て・結婚・学び",
+        "福祉・健康"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "updated": "2026-04-07",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
       "title": "中小企業対策利子補助金 ～交付請求のお知らせ～",
       "labels": [],
-      "url": "https://sendai-cci.jp/index.php/news/zyosei/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E5%AF%BE%E7%AD%96%E5%88%A9%E5%AD%90%E8%A3%9C%E5%8A%A9%E9%87%91%E3%80%80%EF%BD%9E%E4%BA%A4%E4%BB%98%E8%AB%8B%E6%B1%82%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%EF%BD%9E/",
+      "url": "https://www.sendai-cci.jp/index.php/news/zyosei/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E5%AF%BE%E7%AD%96%E5%88%A9%E5%AD%90%E8%A3%9C%E5%8A%A9%E9%87%91%E3%80%80%EF%BD%9E%E4%BA%A4%E4%BB%98%E8%AB%8B%E6%B1%82%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%EF%BD%9E/",
       "org": "川内商工会議所",
+      "source_type": "list",
       "sources": [
         "cci-zyosei"
       ],
@@ -1085,51 +3469,102 @@
         "企業・経営"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "checked": "2026-11-11",
       "status": "要確認"
     },
     {
-      "title": "令和8年度危険廃屋等解体撤去促進事業補助金のご案内",
-      "labels": [
-        "受付終了"
-      ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9023.html",
+      "title": "中小企業災害復旧資金利子補助金",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/6433.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
-        "city-hojokin"
+        "city-kigyo"
       ],
       "categories": [
-        "住まい・空き家",
+        "企業・経営",
         "防災"
       ],
-      "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
+      "target": "事業者向け",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-07-06",
+      "deadline": "2021-12-31",
+      "period": "【令和3年7月10日の大雨】令和3年7月10日から令和3年12月31日までに借入申込を行ったもの",
+      "amount": "上限1,500万円",
+      "rate": "1.80%",
+      "checked": "2026-11-11",
       "status": "受付終了"
     },
     {
-      "title": "令和9年度地域経済循環創造事業補助金を活用する事業者を募集します",
+      "title": "北薩地域UIJターン就労促進事業補助金",
       "labels": [
-        "募集終了"
+        "県_補助金"
       ],
-      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16796.html",
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/11971.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
-        "city-hojokin"
+        "city-koyo"
       ],
       "categories": [
+        "移住・定住",
+        "仕事・人材"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2024-06-07",
+      "period": "申請期限：企業説明会(開催)前までに提出(最終期限:令和6年2月29日)",
+      "deadline": "2024-02-29",
+      "checked": "2026-11-11",
+      "status": "受付終了"
+    },
+    {
+      "title": "奨学金返還支援制度",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13483.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-hojokin",
+        "city-koyo"
+      ],
+      "categories": [
+        "仕事・人材"
+      ],
+      "target": "個人・家庭向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2025-03-27",
+      "period": "受付期間：5月1日~翌年2月末日(土曜日・日曜日・祝日を除く)",
+      "deadline": "2025-05-01",
+      "amount": "上限30万円",
+      "checked": "2026-11-11",
+      "status": "受付終了"
+    },
+    {
+      "title": "DXで“人手不足・非効率”を解消し、稼ぐ力を高める/令和8年度 中小企業DX支援事業",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/16941.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
+      "sources": [
+        "city-kigyo"
+      ],
+      "categories": [
+        "仕事・人材",
         "企業・経営"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-07-10",
+      "period": "締切：令和8年7月9日(木曜日)",
+      "deadline": "2026-07-09",
+      "checked": "2026-11-11",
       "status": "受付終了"
     },
     {
@@ -1139,6 +3574,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9025.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin"
       ],
@@ -1147,10 +3583,14 @@
         "防災"
       ],
       "target": "個人・家庭向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-10-14",
+      "period": "申請期間：...令和8年4月20日(月曜日)~9月30日(水曜日)(先着順ですが予算に達した場合、申請期間の最終日を待たずに締め切ることがあります",
+      "deadline": "2026-09-30",
+      "amount": "補助金額 115万円",
+      "rate": "3分の2",
+      "checked": "2026-11-11",
       "status": "受付終了"
     },
     {
@@ -1160,6 +3600,7 @@
       ],
       "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13621.html",
       "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
         "city-hojokin",
         "city-koyo"
@@ -1168,71 +3609,70 @@
         "仕事・人材"
       ],
       "target": "事業者向け",
-      "updated": null,
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2026-03-27",
+      "period": "申請期限：令和9年1月31日まで",
+      "deadline": "2027-01-31",
+      "amount": "上限50万円",
+      "rate": "3分の2",
+      "checked": "2026-11-11",
       "status": "受付終了"
     },
     {
-      "title": "ものづくり・商業・サービス革新補助金",
-      "labels": [],
-      "url": "https://sendai-cci.jp/index.php/news/zyosei/hojokin20150216/",
-      "org": "川内商工会議所",
+      "title": "令和8年度危険廃屋等解体撤去促進事業補助金のご案内",
+      "labels": [
+        "受付終了"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9023.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
-        "cci-zyosei"
+        "city-hojokin"
       ],
       "categories": [
-        "企業・経営"
+        "住まい・空き家",
+        "防災"
       ],
-      "target": "事業者向け",
-      "updated": "2015-02-16",
-      "period": null,
+      "target": "個人・家庭向け",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "過去のお知らせ"
+      "last_seen": "2026-11-11",
+      "updated": "2026-07-14",
+      "deadline": "2027-03-15",
+      "period": "令和9年3月15日(月曜日)までに、実績報告書の提出が可能であること。",
+      "amount": "上限30万円",
+      "rate": "3分の1",
+      "checked": "2026-11-11",
+      "status": "受付終了"
     },
     {
-      "title": "中小企業対策の利子補助制度について",
-      "labels": [],
-      "url": "https://sendai-cci.jp/index.php/news/zyosei/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E5%AF%BE%E7%AD%96%E3%81%AE%E5%88%A9%E5%AD%90%E8%A3%9C%E5%8A%A9%E5%88%B6%E5%BA%A6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/",
-      "org": "川内商工会議所",
+      "title": "令和9年度地域経済循環創造事業補助金を活用する事業者を募集します",
+      "labels": [
+        "募集終了"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16796.html",
+      "org": "薩摩川内市",
+      "source_type": "list",
       "sources": [
-        "cci-zyosei"
+        "city-hojokin"
       ],
       "categories": [
         "企業・経営"
       ],
       "target": "事業者向け",
-      "updated": "2015-04-21",
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "過去のお知らせ"
-    },
-    {
-      "title": "中小企業者等の設備投資や販路開拓を支援",
-      "labels": [],
-      "url": "https://sendai-cci.jp/index.php/news/zyosei/hojokin20160305/",
-      "org": "川内商工会議所",
-      "sources": [
-        "cci-zyosei"
-      ],
-      "categories": [
-        "企業・経営"
-      ],
-      "target": "事業者向け",
-      "updated": "2016-03-05",
-      "period": null,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "過去のお知らせ"
+      "last_seen": "2026-11-11",
+      "updated": "2026-09-25",
+      "amount": "補助額 3,000万円",
+      "checked": "2026-11-11",
+      "status": "受付終了"
     },
     {
       "title": "創業・第二創業促進補助金",
       "labels": [],
-      "url": "https://sendai-cci.jp/index.php/news/zyosei/sogyo/",
+      "url": "https://www.sendai-cci.jp/index.php/news/zyosei/sogyo/",
       "org": "川内商工会議所",
+      "source_type": "list",
       "sources": [
         "cci-zyosei"
       ],
@@ -1240,17 +3680,20 @@
         "創業・お店"
       ],
       "target": "事業者向け",
-      "updated": "2015-03-03",
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "status": "過去のお知らせ"
+      "last_seen": "2026-11-11",
+      "updated": "2015-03-03",
+      "period": "募集期間：平成27年3月2日(月)~平成27年3月31日(火)17:00必着",
+      "deadline": "2015-03-31",
+      "checked": "2026-11-11",
+      "status": "受付終了"
     },
     {
-      "title": "販路開拓をお考えの小規模事業者の皆様へ！！小規模事業者持続化補助金",
+      "title": "ものづくり・商業・サービス革新補助金",
       "labels": [],
-      "url": "https://sendai-cci.jp/index.php/news/zyosei/jizokuka/",
+      "url": "https://www.sendai-cci.jp/index.php/news/zyosei/hojokin20150216/",
       "org": "川内商工会議所",
+      "source_type": "list",
       "sources": [
         "cci-zyosei"
       ],
@@ -1258,11 +3701,170 @@
         "企業・経営"
       ],
       "target": "事業者向け",
-      "updated": "2018-04-02",
-      "period": null,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2015-02-16",
+      "checked": "2026-11-11",
       "status": "過去のお知らせ"
+    },
+    {
+      "title": "中小企業対策の利子補助制度について",
+      "labels": [],
+      "url": "https://www.sendai-cci.jp/index.php/news/zyosei/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E5%AF%BE%E7%AD%96%E3%81%AE%E5%88%A9%E5%AD%90%E8%A3%9C%E5%8A%A9%E5%88%B6%E5%BA%A6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/",
+      "org": "川内商工会議所",
+      "source_type": "list",
+      "sources": [
+        "cci-zyosei"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2015-04-21",
+      "rate": "70%",
+      "checked": "2026-11-11",
+      "status": "過去のお知らせ"
+    },
+    {
+      "title": "中小企業者等の設備投資や販路開拓を支援",
+      "labels": [],
+      "url": "https://www.sendai-cci.jp/index.php/news/zyosei/hojokin20160305/",
+      "org": "川内商工会議所",
+      "source_type": "list",
+      "sources": [
+        "cci-zyosei"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2016-03-05",
+      "rate": "3分の2",
+      "checked": "2026-11-11",
+      "status": "過去のお知らせ"
+    },
+    {
+      "title": "販路開拓をお考えの小規模事業者の皆様へ！！小規模事業者持続化補助金",
+      "labels": [],
+      "url": "https://www.sendai-cci.jp/index.php/news/zyosei/jizokuka/",
+      "org": "川内商工会議所",
+      "source_type": "list",
+      "sources": [
+        "cci-zyosei"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "updated": "2018-04-02",
+      "period": "締切：日本商工会議所(補助金事務局)への申請書類一式の送付締切",
+      "amount": "補助額 50万円",
+      "checked": "2026-11-11",
+      "status": "過去のお知らせ"
+    }
+  ],
+  "events": [
+    {
+      "title": "人手不足解消へ！採用力強化・人材確保に役立つ情報",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/hitodefusoku/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "令和９年 川内商工会議所新年賀詞交歓会のご案内",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/%E4%BB%A4%E5%92%8C%EF%BC%99%E5%B9%B4-%E5%B7%9D%E5%86%85%E5%95%86%E5%B7%A5%E4%BC%9A%E8%AD%B0%E6%89%80%E6%96%B0%E5%B9%B4%E8%B3%80%E8%A9%9E%E4%BA%A4%E6%AD%93%E4%BC%9A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "埋もれた魅力のブラッシュアップとメディア活用セミナー",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/seminar20261211/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "社長も知っておくべき財務入門",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/seminar20261208/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "価格転嫁・価格交渉セミナー",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/seminar20261126/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "事業承継セミナー",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/seminar20261020/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "経営者・後継者のための事業承継個別相談会",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/20261027soudan/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "SNSを活用した売上アップ！セミナー",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/seminar20261007/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "DX化・デジタル化の取組に関する個別相談会",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/seminar202409241/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "求人採用と「人が活きる」辞めない職場づくりのコツ（制度改正等の課題解決環境整備事業）",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/seminar20260727/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "会社を守る実践セミナー",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/seminar20260804/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
+    },
+    {
+      "title": "令和８年度 薩摩川内市創業スクール",
+      "url": "https://www.sendai-cci.jp/index.php/news/event/sougyou2026/",
+      "org": "川内商工会議所",
+      "source": "cci-event",
+      "first_seen": "2026-11-11",
+      "posted": null
     }
   ]
 }
