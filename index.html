@@ -6,6 +6,8 @@
 <meta name="theme-color" content="#F1F3F9" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121418" media="(prefers-color-scheme: dark)">
 <title>薩摩川内市 補助金・助成金さがし</title>
+<meta name="description" content="薩摩川内市・川内商工会議所・国（Jグランツ）の補助金・助成金を毎週自動で集めた一覧です。締切が近い順の並べ替えや、かんたん診断ができます。">
+<link rel="alternate" type="application/rss+xml" title="新着（RSS）" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
@@ -18,6 +20,7 @@
     --sub: #6B7080;
     --line: #E3E6EF;
     --accent: #4C6EF5;
+    --accent-soft: #EDF2FF;
     --on-accent: #FFFFFF;
     --open: #0CA678;
     --open-bg: #E6FCF5;
@@ -25,7 +28,10 @@
     --check-bg: #FFF4E6;
     --closed: #868E96;
     --closed-bg: #F1F3F5;
-    --new: #E03131;
+    --urgent: #E03131;
+    --urgent-bg: #FFF5F5;
+    --star: #F59F00;
+    --scrim: rgba(18, 20, 24, .5);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -36,6 +42,7 @@
       --sub: #9AA0B0;
       --line: #2A2E38;
       --accent: #748FFC;
+      --accent-soft: #1E2645;
       --on-accent: #0E1430;
       --open: #38D9A9;
       --open-bg: #0E2A22;
@@ -43,7 +50,10 @@
       --check-bg: #33220F;
       --closed: #ADB5BD;
       --closed-bg: #2A2E38;
-      --new: #FF8787;
+      --urgent: #FF8787;
+      --urgent-bg: #3A1E22;
+      --star: #FFD43B;
+      --scrim: rgba(0, 0, 0, .6);
     }
   }
   * { box-sizing: border-box; }
@@ -56,25 +66,44 @@
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
   }
-  button, input { font: inherit; color: inherit; }
+  button, input, select { font: inherit; color: inherit; }
   button { cursor: pointer; }
   :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
   a { color: inherit; }
+  [hidden] { display: none !important; }
 
   .wrap { max-width: 880px; margin: 0 auto; padding: 20px 20px calc(48px + env(safe-area-inset-bottom)); }
 
+  /* ヘッダー */
   header.hero { background: var(--surface); border-radius: 32px; padding: 28px 24px 24px; }
   h1 { margin: 0; font-size: clamp(1.6rem, 6.4vw, 2.4rem); font-weight: 900; line-height: 1.25; letter-spacing: -.01em; }
   .lead { margin: 8px 0 0; color: var(--sub); }
-  .summary { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 16px; font-size: .875rem; color: var(--sub); }
-  .summary b { color: var(--ink); font-size: 1.25rem; font-weight: 900; margin-right: 2px; font-variant-numeric: tabular-nums; }
-  .notice {
-    margin-top: 16px;
-    padding: 12px 14px;
-    border-radius: 16px;
-    background: var(--check-bg);
-    font-size: .875rem;
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 18px; }
+  .stat { background: var(--field); border-radius: 16px; padding: 10px 12px; }
+  .stat b { display: block; font-size: 1.5rem; font-weight: 900; line-height: 1.2; font-variant-numeric: tabular-nums; }
+  .stat b small { font-size: .8125rem; margin-left: 2px; }
+  .stat span { font-size: .75rem; color: var(--sub); font-weight: 700; }
+  .stat.urgent b { color: var(--urgent); }
+  .checked { margin: 10px 0 0; font-size: .8125rem; color: var(--sub); }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .btn {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: .9375rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: transform .08s;
   }
+  .btn:active { transform: scale(.97); }
+  .btn svg { width: 18px; height: 18px; }
+  .btn-primary { background: var(--accent); color: var(--on-accent); }
+  .btn-soft { background: var(--field); color: var(--ink); }
+  .notice { margin: 16px 0 0; padding: 12px 14px; border-radius: 16px; background: var(--check-bg); font-size: .875rem; }
+  .alert { margin: 12px 0 0; padding: 12px 14px; border-radius: 16px; background: var(--urgent-bg); font-size: .875rem; }
 
   /* 絞り込み */
   .controls { background: var(--surface); border-radius: 24px; padding: 18px 20px; margin-top: 16px; }
@@ -94,17 +123,11 @@
   .group { margin-top: 14px; }
   .group-label { font-size: .8125rem; font-weight: 700; color: var(--sub); margin-bottom: 6px; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip {
-    border: none;
-    background: var(--field);
-    border-radius: 999px;
-    padding: 7px 14px;
-    font-size: .875rem;
-    font-weight: 700;
-  }
+  .chip { border: none; background: var(--field); border-radius: 999px; padding: 7px 14px; font-size: .875rem; font-weight: 700; }
   .chip[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
   .chip .n { font-weight: 500; opacity: .75; margin-left: 4px; font-variant-numeric: tabular-nums; }
-  .toggle-row { display: flex; align-items: center; gap: 10px; margin-top: 14px; font-size: .9375rem; font-weight: 700; }
+  .row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-top: 14px; }
+  .toggle { display: flex; align-items: center; gap: 10px; font-size: .9375rem; font-weight: 700; }
   .switch { position: relative; width: 46px; height: 28px; flex-shrink: 0; }
   .switch input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
   .switch span { position: absolute; inset: 0; border-radius: 999px; background: var(--line); transition: background .15s; pointer-events: none; }
@@ -112,47 +135,169 @@
   .switch input:checked + span { background: var(--accent); }
   .switch input:checked + span::after { transform: translateX(18px); }
   .switch input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 2px; }
+  select {
+    border: none;
+    background: var(--field);
+    border-radius: 12px;
+    padding: 9px 12px;
+    font-weight: 700;
+    font-size: .875rem;
+  }
 
-  .result-count { margin: 20px 4px 8px; font-weight: 700; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
-  .result-count button { border: none; background: none; color: var(--accent); font-weight: 700; font-size: .875rem; padding: 4px 0; }
+  .result-head { margin: 20px 4px 8px; font-weight: 700; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .link-btn { border: none; background: none; color: var(--accent); font-weight: 700; font-size: .875rem; padding: 4px 0; }
 
   /* 一覧 */
   ul.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-  .item { background: var(--surface); border-radius: 20px; padding: 16px 18px; }
-  .item-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 6px; }
+  .item { background: var(--surface); border-radius: 20px; padding: 16px 18px; position: relative; }
+  .item-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 6px; padding-right: 44px; }
   .badge { font-size: .75rem; font-weight: 900; border-radius: 6px; padding: 2px 8px; }
   .s-open { color: var(--open); background: var(--open-bg); }
   .s-check { color: var(--check); background: var(--check-bg); }
   .s-closed { color: var(--closed); background: var(--closed-bg); }
-  .new { color: var(--new); font-size: .75rem; font-weight: 900; }
+  .new { color: var(--urgent); font-size: .75rem; font-weight: 900; }
   .target { font-size: .75rem; font-weight: 700; color: var(--sub); }
+  .fav {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: var(--sub);
+  }
+  .fav svg { width: 24px; height: 24px; }
+  .fav[aria-pressed="true"] { color: var(--star); }
+  .fav[aria-pressed="true"] svg { fill: currentColor; }
   .item h2 { margin: 0; font-size: 1.0625rem; font-weight: 700; line-height: 1.5; }
   .item h2 a { text-decoration: none; }
   .item h2 a:hover { text-decoration: underline; }
   .item h2 a::after { content: " ↗"; color: var(--sub); font-weight: 500; font-size: .875rem; }
-  .meta { margin-top: 8px; display: grid; gap: 2px; font-size: .8125rem; color: var(--sub); }
-  .meta .period { color: var(--ink); font-weight: 700; }
+  .facts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .fact { font-size: .8125rem; font-weight: 700; background: var(--field); border-radius: 8px; padding: 3px 10px; }
+  .fact.money { background: var(--accent-soft); color: var(--accent); }
+  .fact.deadline.soon { background: var(--urgent-bg); color: var(--urgent); }
+  .fact.deadline.past { color: var(--closed); }
+  .meta { margin-top: 8px; font-size: .8125rem; color: var(--sub); }
   .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
-  .tag { font-size: .75rem; background: var(--field); border-radius: 6px; padding: 1px 8px; }
+  .tag { font-size: .75rem; border: 1px solid var(--line); border-radius: 6px; padding: 0 7px; }
   .empty { background: var(--surface); border-radius: 20px; padding: 28px 20px; text-align: center; color: var(--sub); }
 
-  .sources { margin-top: 24px; background: var(--surface); border-radius: 24px; padding: 20px 24px; font-size: .8125rem; color: var(--sub); }
-  .sources h2 { margin: 0 0 6px; font-size: 1rem; color: var(--ink); }
+  /* セミナー・変更・出典 */
+  section.box { margin-top: 24px; background: var(--surface); border-radius: 24px; padding: 20px 22px; }
+  section.box h2 { margin: 0 0 4px; font-size: 1.125rem; font-weight: 900; }
+  section.box .desc { margin: 0 0 10px; color: var(--sub); font-size: .875rem; }
+  ul.plain { list-style: none; margin: 0; padding: 0; }
+  ul.plain li { padding: 10px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 5.5em 1fr; gap: 10px; align-items: baseline; }
+  ul.plain li:first-child { border-top: none; }
+  ul.plain .d { font-size: .8125rem; color: var(--sub); font-variant-numeric: tabular-nums; }
+  ul.plain .k { font-size: .75rem; font-weight: 900; margin-right: 6px; }
+  ul.plain .k.add { color: var(--open); }
+  ul.plain .k.end { color: var(--closed); }
+  ul.plain .k.out { color: var(--check); }
+  ul.plain a { text-decoration: none; font-weight: 700; }
+  ul.plain a:hover { text-decoration: underline; }
+  .sources { font-size: .8125rem; color: var(--sub); }
   .sources ul { margin: 0; padding-left: 1.2em; }
   .sources a { color: var(--accent); }
-  .ng { color: var(--new); font-weight: 700; }
+  .sources h2 { color: var(--ink); }
+  .ng { color: var(--urgent); font-weight: 700; }
 
-  .error { background: var(--surface); border-radius: 24px; padding: 24px; border-left: 6px solid var(--new); }
+  /* かんたん診断 */
+  dialog {
+    border: none;
+    border-radius: 28px;
+    padding: 0;
+    width: min(100% - 32px, 520px);
+    background: var(--surface);
+    color: var(--ink);
+  }
+  dialog::backdrop { background: var(--scrim); }
+  .dlg { padding: 24px; }
+  .dlg-step { font-size: .8125rem; color: var(--sub); font-weight: 700; }
+  .dlg h2 { margin: 4px 0 16px; font-size: 1.25rem; font-weight: 900; }
+  .answers { display: grid; gap: 8px; }
+  .answer { border: 2px solid transparent; background: var(--field); border-radius: 16px; padding: 14px 16px; text-align: left; font-weight: 700; }
+  .answer small { display: block; font-weight: 500; color: var(--sub); font-size: .8125rem; }
+  .answer:hover { border-color: var(--accent); }
+  .dlg-foot { display: flex; justify-content: space-between; margin-top: 16px; }
+
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(24px + env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    background: var(--ink);
+    color: var(--bg);
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: .875rem;
+    z-index: 20;
+  }
+
+  .error { background: var(--surface); border-radius: 24px; padding: 24px; border-left: 6px solid var(--urgent); list-style: none; }
   .error code { background: var(--field); padding: 1px 6px; border-radius: 6px; }
+  .print-head { display: none; }
+
+  /* 印刷 */
+  @media print {
+    :root { --bg: #fff; --surface: #fff; --field: #fff; --ink: #000; --sub: #444; --line: #bbb; }
+    body { font-size: 10.5pt; line-height: 1.5; }
+    .wrap { max-width: none; padding: 0; }
+    header.hero, .controls, .fav, .result-head .link-btn, section.box:not(.sources), .toast, dialog { display: none !important; }
+    .print-head { display: block; margin-bottom: 8pt; }
+    .print-head h1 { font-size: 15pt; }
+    .print-head p { margin: 2pt 0; font-size: 9pt; }
+    .result-head { margin: 0 0 4pt; }
+    ul.list { gap: 0; }
+    .item { border-radius: 0; padding: 6pt 0; border-bottom: 1px solid var(--line); break-inside: avoid; }
+    .item-top { padding-right: 0; margin-bottom: 2pt; }
+    .item h2 { font-size: 11pt; }
+    .item h2 a::after { content: "\A" attr(href); white-space: pre; font-size: 8pt; color: #444; font-weight: 400; }
+    .tags { display: none; }
+    .fact { border: 1px solid #999; }
+    section.sources { margin-top: 10pt; padding: 0; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div class="print-head">
+    <h1>薩摩川内市 補助金・助成金 一覧</h1>
+    <p id="printInfo"></p>
+    <p>自動で集めた情報です。申し込む前に必ず各ページで確かめてください。</p>
+  </div>
+
   <header class="hero">
     <h1>薩摩川内市 補助金・助成金さがし</h1>
-    <p class="lead">市と商工会議所のホームページから、補助金・助成金の情報を毎週自動で集めています。</p>
-    <div class="summary" id="summary"></div>
-    <p class="notice">ここに載っているのは各ページの見出しから自動で読み取った情報です。対象・金額・期限は、申し込む前に必ずリンク先のページで確かめてください。</p>
+    <p class="lead">市・商工会議所・国（Jグランツ）の補助金を、毎週自動で集めています。</p>
+    <div class="stats" id="stats"></div>
+    <p class="checked" id="checked"></p>
+    <div class="actions">
+      <button class="btn btn-primary" type="button" id="quizBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h9"/></svg>
+        かんたん診断
+      </button>
+      <button class="btn btn-soft" type="button" id="shareBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+        この条件を共有
+      </button>
+      <button class="btn btn-soft" type="button" id="printBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/></svg>
+        印刷
+      </button>
+      <a class="btn btn-soft" href="feed.xml" id="rssLink">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 11a9 9 0 019 9M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1.5" fill="currentColor"/></svg>
+        新着をRSSで受け取る
+      </a>
+    </div>
+    <p class="notice">各ページの見出しや本文から自動で読み取った情報です。対象・金額・締切は、申し込む前に必ずリンク先のページで確かめてください。</p>
+    <div id="alerts"></div>
   </header>
 
   <section class="controls" aria-label="絞り込み">
@@ -168,27 +313,66 @@
       <div class="group-label" id="catLabel">分野</div>
       <div class="chips" id="cats" role="group" aria-labelledby="catLabel"></div>
     </div>
-    <label class="toggle-row">
-      <span class="switch"><input type="checkbox" id="showClosed"><span></span></span>
-      受付終了も表示する
-    </label>
+    <div class="group">
+      <div class="group-label" id="orgLabel">どこの制度</div>
+      <div class="chips" id="orgs" role="group" aria-labelledby="orgLabel"></div>
+    </div>
+    <div class="row">
+      <label class="toggle"><span class="switch"><input type="checkbox" id="favOnly"><span></span></span><span id="favLabel">★お気に入りだけ</span></label>
+      <label class="toggle"><span class="switch"><input type="checkbox" id="showClosed"><span></span></span>受付終了も表示</label>
+      <label class="toggle">並び順
+        <select id="sort">
+          <option value="recommend">おすすめ順</option>
+          <option value="deadline">締切が近い順</option>
+          <option value="new">新しく載った順</option>
+        </select>
+      </label>
+    </div>
   </section>
 
-  <div class="result-count" aria-live="polite">
+  <div class="result-head" aria-live="polite">
     <span id="count"></span>
-    <button type="button" id="reset" hidden>条件をリセット</button>
+    <button type="button" class="link-btn" id="reset" hidden>条件をリセット</button>
   </div>
   <ul class="list" id="list"></ul>
 
-  <section class="sources" id="sources" aria-labelledby="srcTitle"></section>
+  <section class="box" id="eventsBox" aria-labelledby="evTitle" hidden>
+    <h2 id="evTitle">セミナー・相談会</h2>
+    <p class="desc">補助金の申請や経営の相談に役立つ、川内商工会議所のお知らせです。</p>
+    <ul class="plain" id="events"></ul>
+  </section>
+
+  <section class="box" id="historyBox" aria-labelledby="hisTitle" hidden>
+    <h2 id="hisTitle">最近の変更</h2>
+    <p class="desc">毎週の巡回で見つかった変化です。</p>
+    <ul class="plain" id="history"></ul>
+  </section>
+
+  <section class="box sources" id="sources" aria-labelledby="srcTitle"></section>
 </div>
+
+<dialog id="quiz" aria-labelledby="quizTitle">
+  <div class="dlg">
+    <div class="dlg-step" id="quizStep"></div>
+    <h2 id="quizTitle"></h2>
+    <div class="answers" id="quizAnswers"></div>
+    <div class="dlg-foot">
+      <button type="button" class="link-btn" id="quizBack">もどる</button>
+      <button type="button" class="link-btn" id="quizClose">とじる</button>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
 
 <script>
 (() => {
   const DATA_URL = "data/subsidies.json";
+  const HISTORY_URL = "data/history.json";
   const TARGETS = ["個人・家庭向け", "事業者向け", "団体向け"];
   const CLOSED = ["受付終了", "過去のお知らせ"];
   const NEW_DAYS = 30;
+  const SOON_DAYS = 14;
 
   const $ = id => document.getElementById(id);
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -198,123 +382,300 @@
     const [y, m, d] = iso.slice(0, 10).split("-").map(Number);
     return `${y}年${m}月${d}日`;
   };
+  const shortDate = iso => {
+    if (!iso) return "";
+    const [, m, d] = iso.slice(0, 10).split("-").map(Number);
+    return `${m}月${d}日`;
+  };
+  const todayIso = () => {
+    const d = new Date();
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  };
+  const daysLeft = iso => Math.round((Date.parse(iso + "T00:00:00") - Date.parse(todayIso() + "T00:00:00")) / 864e5);
 
   let data = null;
-  const state = { q: "", target: "", cat: "", showClosed: false };
+  let history = [];
+  const DEFAULT = { q: "", target: "", cat: "", org: "", closed: false, fav: false, sort: "recommend" };
+  const state = { ...DEFAULT };
 
-  // 前回ひらいたときの絞り込みを覚えておく（この端末だけ）
-  try { Object.assign(state, JSON.parse(localStorage.getItem("subsidy-filter") || "{}"), { q: "" }); } catch (e) {}
-  const remember = () => { try { localStorage.setItem("subsidy-filter", JSON.stringify({ target: state.target, cat: state.cat, showClosed: state.showClosed })); } catch (e) {} };
+  // ===== 保存（この端末だけ）=====
+  const store = {
+    get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  };
+  let favs = new Set(store.get("subsidy-favs", []));
 
-  function isNew(item) {
-    if (!item.first_seen || !data.meta.initial || item.first_seen <= data.meta.initial) return false;
-    return (Date.now() - Date.parse(item.first_seen)) / 864e5 <= NEW_DAYS;
+  // ===== 条件をURLに残す（共有できるように）=====
+  function readUrl() {
+    const p = new URLSearchParams(location.search);
+    if (![...p.keys()].length) {
+      Object.assign(state, store.get("subsidy-filter", {}), { q: "", fav: false });
+      return;
+    }
+    state.q = p.get("q") || "";
+    state.target = p.get("target") || "";
+    state.cat = p.get("cat") || "";
+    state.org = p.get("org") || "";
+    state.closed = p.get("closed") === "1";
+    state.sort = p.get("sort") || "recommend";
   }
+  function writeUrl() {
+    const p = new URLSearchParams();
+    if (state.q) p.set("q", state.q);
+    if (state.target) p.set("target", state.target);
+    if (state.cat) p.set("cat", state.cat);
+    if (state.org) p.set("org", state.org);
+    if (state.closed) p.set("closed", "1");
+    if (state.sort !== "recommend") p.set("sort", state.sort);
+    const qs = p.toString();
+    history_replace(location.pathname + (qs ? "?" + qs : ""));
+    store.set("subsidy-filter", { target: state.target, cat: state.cat, org: state.org, closed: state.closed, sort: state.sort });
+  }
+  function history_replace(url) { try { window.history.replaceState(null, "", url); } catch (e) {} }
+
+  // ===== 判定 =====
+  function isNew(item) {
+    const base = (data.meta.source_first_run || {})[item.sources?.[0]] || data.meta.initial;
+    if (!item.first_seen || !base || item.first_seen <= base) return false;
+    return (Date.parse(todayIso()) - Date.parse(item.first_seen)) / 864e5 <= NEW_DAYS;
+  }
+  const isSoon = item => item.deadline && item.status === "募集中" && daysLeft(item.deadline) >= 0 && daysLeft(item.deadline) <= SOON_DAYS;
 
   function matches(item, ignore) {
-    if (!state.showClosed && CLOSED.includes(item.status)) return false;
+    if (!state.closed && CLOSED.includes(item.status)) return false;
+    if (state.fav && !favs.has(item.url)) return false;
     if (ignore !== "target" && state.target && item.target !== state.target) return false;
     if (ignore !== "cat" && state.cat && !item.categories.includes(state.cat)) return false;
+    if (ignore !== "org" && state.org && item.org !== state.org) return false;
     if (state.q) {
-      const hay = norm([item.title, item.org, item.target, item.categories.join(" "), item.period].join(" "));
+      const hay = norm([item.title, item.org, item.target, item.categories.join(" "), item.period, item.amount, item.institution].join(" "));
       if (!norm(state.q).split(/\s+/).filter(Boolean).every(w => hay.includes(w))) return false;
     }
     return true;
   }
 
-  function chips(box, values, current, key, ignore) {
-    const counts = {};
-    data.items.filter(i => matches(i, ignore)).forEach(i => {
-      (key === "cat" ? i.categories : [i.target]).forEach(v => counts[v] = (counts[v] || 0) + 1);
-    });
-    box.innerHTML = [["", "すべて"], ...values.map(v => [v, v])].map(([v, label]) => {
-      const n = v ? (counts[v] || 0) : data.items.filter(i => matches(i, ignore)).length;
-      return `<button class="chip" type="button" data-v="${esc(v)}" aria-pressed="${v === current}">${esc(label)}<span class="n">${n}</span></button>`;
-    }).join("");
-    box.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
-      state[key] = b.dataset.v;
-      remember();
-      render();
-    }));
+  function sorted(list) {
+    const arr = list.slice();
+    if (state.sort === "deadline") {
+      const open = i => CLOSED.includes(i.status) ? 1 : 0;
+      arr.sort((a, b) => open(a) - open(b) || (a.deadline && a.deadline >= todayIso() ? a.deadline : "9999").localeCompare(b.deadline && b.deadline >= todayIso() ? b.deadline : "9999"));
+    } else if (state.sort === "new") {
+      arr.sort((a, b) => (b.first_seen || "").localeCompare(a.first_seen || ""));
+    }
+    return arr;
   }
 
-  function statusClass(s) {
-    return s === "募集中" ? "s-open" : s === "要確認" ? "s-check" : "s-closed";
+  // ===== 絞り込みボタン =====
+  function chips(box, values, key) {
+    const pool = data.items.filter(i => matches(i, key));
+    const count = v => pool.filter(i => key === "cat" ? i.categories.includes(v) : (key === "org" ? i.org : i.target) === v).length;
+    box.innerHTML = [["", "すべて"], ...values.map(v => [v, v])].map(([v, label]) =>
+      `<button class="chip" type="button" data-v="${esc(v)}" aria-pressed="${v === state[key]}">${esc(label)}<span class="n">${v ? count(v) : pool.length}</span></button>`
+    ).join("");
+    box.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => { state[key] = b.dataset.v; update(); }));
   }
+
+  // ===== カード =====
+  const STAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9z"/></svg>';
+  function statusClass(s) { return s === "募集中" ? "s-open" : s === "要確認" ? "s-check" : "s-closed"; }
 
   function card(item) {
-    const meta = [];
-    if (item.period) meta.push(`<span class="period">${esc(item.period)}</span>`);
-    meta.push(`<span>${esc(item.org)}${item.updated ? `　ページ更新：${jpDate(item.updated)}` : ""}</span>`);
-    const labels = (item.labels || []).filter(l => !/募集中|受付中|終了|締切/.test(l));
+    const facts = [];
+    if (item.amount) facts.push(`<span class="fact money">${esc(item.amount)}</span>`);
+    if (item.rate) facts.push(`<span class="fact money">補助率 ${esc(item.rate)}</span>`);
+    if (item.deadline) {
+      const n = daysLeft(item.deadline);
+      const cls = n < 0 ? "past" : n <= SOON_DAYS ? "soon" : "";
+      const tail = n < 0 ? "（過ぎています）" : n === 0 ? "（今日まで）" : `（あと${n}日）`;
+      facts.push(`<span class="fact deadline ${cls}">締切 ${jpDate(item.deadline)}${tail}</span>`);
+    } else if (item.deadline_note) {
+      facts.push(`<span class="fact">随時受付</span>`);
+    } else if (item.period) {
+      facts.push(`<span class="fact">${esc(item.period)}</span>`);
+    }
+    const meta = [item.org === "国・県など" && item.institution ? `${item.institution}（Jグランツ）` : item.org];
+    if (item.area && item.area !== "全国") meta.push(`対象地域：${item.area}`);
+    if (item.area === "全国") meta.push("全国が対象");
+    if (item.checked) meta.push(`確認：${shortDate(item.checked)}`);
+    if (item.updated) meta.push(`ページ更新：${jpDate(item.updated)}`);
+    const labels = (item.labels || []).filter(l => !/募集中|受付中|終了|締切/.test(l)).map(l => l.replace(/_/g, "の"));
+    const on = favs.has(item.url);
     return `
       <li class="item">
+        <button class="fav" type="button" data-url="${esc(item.url)}" aria-pressed="${on}" aria-label="${esc(item.title)}をお気に入り${on ? "から外す" : "に追加"}">${STAR}</button>
         <div class="item-top">
           <span class="badge ${statusClass(item.status)}">${esc(item.status === "要確認" ? "受付状況は要確認" : item.status)}</span>
           ${isNew(item) ? `<span class="new">新着</span>` : ""}
           <span class="target">${esc(item.target)}</span>
         </div>
         <h2><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h2>
-        <div class="meta">${meta.join("")}</div>
-        <div class="tags">${[...labels.map(l => l.replace(/_/g, "の")), ...item.categories].map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
+        ${facts.length ? `<div class="facts">${facts.join("")}</div>` : ""}
+        <div class="meta">${meta.map(esc).join("　")}</div>
+        <div class="tags">${[...labels, ...item.categories].map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
       </li>`;
   }
 
+  // ===== 画面を描く =====
   function render() {
-    const cats = [...new Set(data.items.flatMap(i => i.categories))]
-      .sort((a, b) => (a === "その他") - (b === "その他") || data.items.filter(i => i.categories.includes(b)).length - data.items.filter(i => i.categories.includes(a)).length);
+    const cats = [...new Set(data.items.flatMap(i => i.categories))].sort((a, b) =>
+      (a === "その他") - (b === "その他") || data.items.filter(i => i.categories.includes(b)).length - data.items.filter(i => i.categories.includes(a)).length);
+    const orgs = [...new Set(data.items.map(i => i.org))].sort((a, b) =>
+      ["薩摩川内市", "川内商工会議所", "国・県など"].indexOf(a) - ["薩摩川内市", "川内商工会議所", "国・県など"].indexOf(b));
     if (state.cat && !cats.includes(state.cat)) state.cat = "";
-    chips($("targets"), TARGETS, state.target, "target", "target");
-    chips($("cats"), cats, state.cat, "cat", "cat");
-    $("showClosed").checked = state.showClosed;
+    chips($("targets"), TARGETS, "target");
+    chips($("cats"), cats, "cat");
+    chips($("orgs"), orgs, "org");
+    $("q").value = state.q;
+    $("showClosed").checked = state.closed;
+    $("favOnly").checked = state.fav;
+    $("sort").value = state.sort;
+    $("favLabel").textContent = `★お気に入りだけ（${favs.size}）`;
 
-    const shown = data.items.filter(i => matches(i));
+    const shown = sorted(data.items.filter(i => matches(i)));
     $("count").textContent = `${shown.length}件`;
-    $("reset").hidden = !(state.q || state.target || state.cat || state.showClosed);
-    $("list").innerHTML = shown.length
-      ? shown.map(card).join("")
-      : `<li class="empty">条件に合う補助金が見つかりませんでした。キーワードを変えるか、「受付終了も表示する」をオンにしてみてください。</li>`;
+    $("reset").hidden = JSON.stringify({ ...state, sort: "recommend" }) === JSON.stringify({ ...DEFAULT });
+    $("list").innerHTML = shown.length ? shown.map(card).join("") :
+      `<li class="empty">${state.fav && !favs.size ? "まだお気に入りがありません。気になる補助金の ☆ を押すと、ここに集まります。" : "条件に合う補助金が見つかりませんでした。キーワードを変えるか、「受付終了も表示」をオンにしてみてください。"}</li>`;
+    $("list").querySelectorAll(".fav").forEach(b => b.addEventListener("click", () => {
+      const url = b.dataset.url;
+      favs.has(url) ? favs.delete(url) : favs.add(url);
+      store.set("subsidy-favs", [...favs]);
+      toast(favs.has(url) ? "お気に入りに追加しました" : "お気に入りから外しました");
+      render();
+    }));
+    $("printInfo").textContent = `印刷日：${jpDate(todayIso())}　条件：${describe()}　${shown.length}件`;
   }
+
+  function describe() {
+    const parts = [state.target, state.cat, state.org, state.q && `「${state.q}」`, state.fav && "お気に入り", state.closed && "受付終了を含む"].filter(Boolean);
+    return parts.length ? parts.join("・") : "すべて";
+  }
+
+  function update() { writeUrl(); render(); }
 
   function header() {
     const m = data.meta;
     const open = data.items.filter(i => i.status === "募集中").length;
+    const soon = data.items.filter(isSoon).length;
     const fresh = data.items.filter(isNew).length;
-    $("summary").innerHTML = `
-      <span><b>${open}</b>件 募集中</span>
-      <span><b>${data.items.length}</b>件 掲載</span>
-      ${fresh ? `<span><b>${fresh}</b>件 新着</span>` : ""}
-      <span>最終チェック：${jpDate(m.updated)}</span>`;
+    $("stats").innerHTML = `
+      <div class="stat"><b>${open}<small>件</small></b><span>募集中</span></div>
+      <div class="stat ${soon ? "urgent" : ""}"><b>${soon}<small>件</small></b><span>締切が近い</span></div>
+      <div class="stat"><b>${fresh}<small>件</small></b><span>新着</span></div>`;
+    $("checked").textContent = `最終チェック：${jpDate(m.updated)}　掲載${data.items.length}件`;
+    $("alerts").innerHTML = (m.alerts || []).length
+      ? `<p class="alert">前回の巡回で、一部のページをうまく読めませんでした。その分は前回の情報を表示しています。</p>` : "";
+
+    const evs = (data.events || []).filter(e => (Date.parse(todayIso()) - Date.parse(e.posted || e.first_seen)) / 864e5 <= 180).slice(0, 8);
+    $("eventsBox").hidden = !evs.length;
+    $("events").innerHTML = evs.map(e => `<li><span class="d">${e.posted ? shortDate(e.posted) + "掲載" : ""}</span><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a></li>`).join("");
+
+    const kinds = { "新しく載りました": "add", "募集が始まりました": "add", "受付終了になりました": "end", "一覧から外れました": "out" };
+    const recent = history.slice(0, 15);
+    $("historyBox").hidden = !recent.length;
+    $("history").innerHTML = recent.map(h => `<li><span class="d">${shortDate(h.date)}</span><span><span class="k ${kinds[h.type] || ""}">${esc(h.type)}</span><a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.title)}</a></span></li>`).join("");
+
     $("sources").innerHTML = `
       <h2 id="srcTitle">情報を集めているページ</h2>
-      <ul>${m.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>（${s.count}件）${s.ok ? "" : ` <span class="ng">前回は読み込めませんでした</span>`}</li>`).join("")}</ul>
-      <p style="margin:8px 0 0">「だれ向け」と「分野」は、見出しの言葉から自動で付けた目安です。</p>`;
+      <ul>${m.sources.map(s => `<li><a href="${esc(s.type === "jgrants" ? "https://www.jgrants-portal.go.jp/" : s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>（${s.count}件）${s.ok ? "" : ` <span class="ng">前回は読み込めませんでした</span>`}</li>`).join("")}</ul>
+      <p style="margin:8px 0 0">「だれ向け」と「分野」、締切・金額は、ページの言葉から自動で読み取った目安です。</p>`;
   }
 
-  // 操作
+  // ===== かんたん診断 =====
+  const QUIZ = [
+    { key: "target", q: "あなたは？", a: [
+      ["個人・家庭向け", "個人・家庭", "住まい、子育て、移住など"],
+      ["事業者向け", "お店・会社・農家などの事業者", "創業、設備、人材など"],
+      ["団体向け", "地域や趣味の団体", "市民活動、イベントなど"]] },
+    { key: "cat", q: "何に使いたいですか？", a: null },
+    { key: "when", q: "いつごろ申し込みたいですか？", a: [
+      ["soon", "すぐに申し込みたい", "募集中のものを、締切が近い順に"],
+      ["later", "まずは情報を集めたい", "受付終了も含めて、すべて"]] }
+  ];
+  let quizAns = {}, quizIdx = 0;
+  function quizOptions(i) {
+    if (QUIZ[i].a) return QUIZ[i].a;
+    const pool = data.items.filter(it => !CLOSED.includes(it.status) && (!quizAns.target || it.target === quizAns.target));
+    const cats = [...new Set(pool.flatMap(it => it.categories))].filter(c => c !== "その他")
+      .map(c => [c, c, `${pool.filter(it => it.categories.includes(c)).length}件`])
+      .sort((a, b) => parseInt(b[2]) - parseInt(a[2]));
+    return [...cats, ["", "決まっていない", "すべての分野"]];
+  }
+  function showQuiz() {
+    const step = QUIZ[quizIdx];
+    $("quizStep").textContent = `${quizIdx + 1} / ${QUIZ.length}`;
+    $("quizTitle").textContent = step.q;
+    $("quizAnswers").innerHTML = quizOptions(quizIdx).map(([v, label, sub]) =>
+      `<button class="answer" type="button" data-v="${esc(v)}">${esc(label)}<small>${esc(sub)}</small></button>`).join("");
+    $("quizAnswers").querySelectorAll(".answer").forEach(b => b.addEventListener("click", () => {
+      quizAns[step.key] = b.dataset.v;
+      if (quizIdx < QUIZ.length - 1) { quizIdx++; showQuiz(); return; }
+      Object.assign(state, { ...DEFAULT, target: quizAns.target, cat: quizAns.cat,
+        closed: quizAns.when === "later", sort: quizAns.when === "soon" ? "deadline" : "recommend" });
+      $("quiz").close();
+      update();
+      toast(`${describe()} の補助金を表示しています`);
+      document.querySelector(".result-head").scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
+    $("quizBack").style.visibility = quizIdx ? "visible" : "hidden";
+  }
+  $("quizBtn").addEventListener("click", () => {
+    if (!data) return;
+    quizAns = {}; quizIdx = 0; showQuiz();
+    $("quiz").showModal ? $("quiz").showModal() : $("quiz").setAttribute("open", "");
+  });
+  $("quizBack").addEventListener("click", () => { if (quizIdx) { quizIdx--; showQuiz(); } });
+  $("quizClose").addEventListener("click", () => $("quiz").close());
+
+  // ===== 共有・印刷・お知らせ =====
+  let toastTimer = null;
+  function toast(msg) {
+    $("toast").textContent = msg;
+    $("toast").hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => $("toast").hidden = true, 2200);
+  }
+  $("shareBtn").addEventListener("click", async () => {
+    writeUrl();
+    const url = location.href;
+    const title = `薩摩川内市の補助金（${describe()}）`;
+    if (navigator.share) {
+      try { await navigator.share({ title, url }); return; } catch (e) { if (e.name === "AbortError") return; }
+    }
+    try { await navigator.clipboard.writeText(url); toast("この条件のURLをコピーしました"); }
+    catch (e) { prompt("このURLをコピーしてください", url); }
+  });
+  $("printBtn").addEventListener("click", () => window.print());
+
+  // ===== 操作 =====
   let timer = null;
   $("q").addEventListener("input", e => {
     clearTimeout(timer);
-    timer = setTimeout(() => { state.q = e.target.value.trim(); render(); }, 150);
+    timer = setTimeout(() => { state.q = e.target.value.trim(); update(); }, 200);
   });
-  $("showClosed").addEventListener("change", e => { state.showClosed = e.target.checked; remember(); render(); });
-  $("reset").addEventListener("click", () => {
-    Object.assign(state, { q: "", target: "", cat: "", showClosed: false });
-    $("q").value = "";
-    remember();
-    render();
-  });
+  $("showClosed").addEventListener("change", e => { state.closed = e.target.checked; update(); });
+  $("favOnly").addEventListener("change", e => { state.fav = e.target.checked; update(); });
+  $("sort").addEventListener("change", e => { state.sort = e.target.value; update(); });
+  $("reset").addEventListener("click", () => { Object.assign(state, DEFAULT); update(); });
 
-  fetch(DATA_URL, { cache: "no-cache" })
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(d => { data = d; header(); render(); })
-    .catch(() => {
-      document.querySelector(".controls").hidden = true;
-      $("list").innerHTML = `<li class="error">
-        <h2 style="font-size:1.125rem;margin:0 0 6px">データを読み込めませんでした</h2>
-        <p style="margin:0">このページは <code>${DATA_URL}</code> を読み込んで表示します。ファイルをダブルクリックして開くと読み込めないので、GitHub PagesのURLか、Codespacesのプレビューで開いてください。</p>
-      </li>`;
-    });
+  // ===== 読み込み =====
+  readUrl();
+  Promise.all([
+    fetch(DATA_URL, { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    fetch(HISTORY_URL, { cache: "no-cache" }).then(r => r.ok ? r.json() : []).catch(() => [])
+  ]).then(([d, h]) => {
+    data = d;
+    data.items.forEach(i => { i.categories = i.categories || ["その他"]; i.sources = i.sources || []; });
+    history = Array.isArray(h) ? h : [];
+    header();
+    render();
+  }).catch(() => {
+    document.querySelector(".controls").hidden = true;
+    $("list").innerHTML = `<li class="error">
+      <h2 style="font-size:1.125rem;margin:0 0 6px">データを読み込めませんでした</h2>
+      <p style="margin:0">このページは <code>${DATA_URL}</code> を読み込んで表示します。ファイルをダブルクリックして開くと読み込めないので、GitHub PagesのURLか、Codespacesのプレビューで開いてください。</p>
+    </li>`;
+  });
 })();
 </script>
 </body>
