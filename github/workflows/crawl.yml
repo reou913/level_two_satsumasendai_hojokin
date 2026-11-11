@@ -1,0 +1,70 @@
+# 毎週月曜の朝7時（日本時間）に補助金のページを巡回して、一覧を新しくする
+name: 補助金情報を巡回
+
+on:
+  schedule:
+    - cron: "0 22 * * 0"   # 日曜22:00（世界標準時）＝月曜7:00（日本時間）
+  workflow_dispatch:        # 「Run workflow」ボタンで、いつでも手動で動かせる
+
+permissions:
+  contents: write           # 集めた結果を保存するため
+  pages: write              # 公開ページの作り直しを頼むため
+  issues: write             # 異常があったときに知らせ（Issue）を作るため
+
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: リポジトリを取り出す
+        uses: actions/checkout@v4
+
+      - name: Python を用意する
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 巡回する
+        id: crawl
+        run: python3 scripts/crawl.py
+
+      - name: 変わっていたら保存して GitHub に送る
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/subsidies.json data/history.json feed.xml
+          if git diff --cached --quiet; then
+            echo "変更はありませんでした"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "補助金情報を更新（自動巡回）"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 公開ページの作り直しを頼む
+        if: steps.commit.outputs.changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
+
+      - name: 異常があれば Issue で知らせる
+        if: steps.crawl.outputs.alert_count != '0' && steps.crawl.outputs.alert_count != ''
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="巡回の確認が必要です"
+          BODY="$(printf '%s\n\n%s\n\n%s' "$(date '+%Y-%m-%d') の自動巡回で、次のことがありました。" "$(cat .alerts.md)" "前回の結果は残してあるので、一覧が空になることはありません。巡回先のページを開いて、場所やつくりが変わっていないか確かめてください。")"
+          NUM=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number')
+          if [ -n "$NUM" ]; then
+            gh issue comment "$NUM" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+          fi
