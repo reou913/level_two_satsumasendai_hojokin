@@ -1,0 +1,51 @@
+{
+  "_説明": "巡回するページの一覧です。新しいページを足すときは、同じ形で1つ追加します。link_pattern は、そのページの中から拾うリンクのURLの形（正規表現）です。",
+  "sources": [
+    {
+      "id": "city-hojokin",
+      "name": "薩摩川内市「市が交付する補助金」",
+      "org": "薩摩川内市",
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/index.html",
+      "link_pattern": "/gyoseijoho/hojokin/1/\\d+\\.html$",
+      "keyword_filter": true,
+      "priority": 1
+    },
+    {
+      "id": "city-koyo",
+      "name": "薩摩川内市「補助金・助成金（雇用・就業）」",
+      "org": "薩摩川内市",
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/index.html",
+      "link_pattern": "/shigoto_sangyo/koyo_shugyo/202405221/\\d+\\.html$",
+      "keyword_filter": true,
+      "priority": 2
+    },
+    {
+      "id": "city-kigyo",
+      "name": "薩摩川内市「企業・商工事業者支援」",
+      "org": "薩摩川内市",
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/index.html",
+      "link_pattern": "/shigoto_sangyo/chikikeizai-chusyokigyo/1/\\d+\\.html$",
+      "keyword_filter": true,
+      "priority": 2
+    },
+    {
+      "id": "city-iju",
+      "name": "薩摩川内市「移住・定住 助成・支援」",
+      "org": "薩摩川内市",
+      "url": "https://www.city.satsumasendai.lg.jp/ijuteiju/iju_shien/josei_shien/index.html",
+      "link_pattern": "/ijuteiju/iju_shien/josei_shien/\\d+\\.html$",
+      "keyword_filter": true,
+      "priority": 3
+    },
+    {
+      "id": "cci-zyosei",
+      "name": "川内商工会議所「各種補助金」",
+      "org": "川内商工会議所",
+      "url": "https://sendai-cci.jp/index.php/news/zyosei/",
+      "extra_pages": ["https://sendai-cci.jp/index.php/news/zyosei?ccm_paging_p_b482=2"],
+      "link_pattern": "/index\\.php/news/zyosei/[^?#]+/?$",
+      "keyword_filter": false,
+      "priority": 4
+    }
+  ]
+}

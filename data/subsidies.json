@@ -1,0 +1,1268 @@
+{
+  "meta": {
+    "updated": "2026-11-10T20:14+09:00",
+    "initial": "2026-11-10",
+    "count": 62,
+    "sources": [
+      {
+        "id": "city-hojokin",
+        "name": "薩摩川内市「市が交付する補助金」",
+        "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/index.html",
+        "ok": true,
+        "count": 46,
+        "error": null
+      },
+      {
+        "id": "city-koyo",
+        "name": "薩摩川内市「補助金・助成金（雇用・就業）」",
+        "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/index.html",
+        "ok": true,
+        "count": 4,
+        "error": null
+      },
+      {
+        "id": "city-kigyo",
+        "name": "薩摩川内市「企業・商工事業者支援」",
+        "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/index.html",
+        "ok": true,
+        "count": 5,
+        "error": null
+      },
+      {
+        "id": "city-iju",
+        "name": "薩摩川内市「移住・定住 助成・支援」",
+        "url": "https://www.city.satsumasendai.lg.jp/ijuteiju/iju_shien/josei_shien/index.html",
+        "ok": true,
+        "count": 1,
+        "error": null
+      },
+      {
+        "id": "cci-zyosei",
+        "name": "川内商工会議所「各種補助金」",
+        "url": "https://sendai-cci.jp/index.php/news/zyosei/",
+        "ok": true,
+        "count": 6,
+        "error": null
+      }
+    ]
+  },
+  "items": [
+    {
+      "title": "UIJターン者の家賃を支援します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/18610.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-koyo"
+      ],
+      "categories": [
+        "移住・定住"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "がけ地近接等危険住宅移転事業補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9024.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家",
+        "防災"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "中心市街地出店支援補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13608.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-kigyo"
+      ],
+      "categories": [
+        "創業・お店"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "令和7年度市民活動支援補助金（スマイル連携コース）（スマイル育成コース）を活用して事業を行う団体等を募集します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16772.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "地域・市民活動"
+      ],
+      "target": "団体向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度 建設業等人材確保支援補助金を交付します",
+      "labels": [
+        "随時受付中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19352.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-kigyo"
+      ],
+      "categories": [
+        "仕事・人材"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度 快適環境づくり補助金",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9018.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度「地球にやさしい環境整備事業補助金」(蓄電システム、ZEH)のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10281.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "環境・エネルギー"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "令和8年度薩摩川内市創業支援事業補助金を募集します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10523.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-iju"
+      ],
+      "categories": [
+        "創業・お店"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "危険ブロック塀等解体撤去促進事業補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9015.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家",
+        "防災"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "合同企業説明会出展補助金",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/13914.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-koyo"
+      ],
+      "categories": [
+        "仕事・人材"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "地域移定住促進事業補助金",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9021.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "移住・定住"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "子育て応援駐車場の整備費用の一部を助成します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19647.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "家庭用飲用井戸等整備支援事業補助金を交付します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/14196.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "川内港海外展開支援補助金を交付します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13868.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "市スポーツ振興基金補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13815.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "地域・市民活動"
+      ],
+      "target": "団体向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "市内で婚活イベントを実施する団体への補助制度があります",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13726.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "団体向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "店舗等の改装費用を補助します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19719.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-kigyo"
+      ],
+      "categories": [
+        "創業・お店"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "文化振興活動出場補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19753.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "地域・市民活動"
+      ],
+      "target": "団体向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "新規及び後継者漁業就業者支援事業補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/14230.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "仕事・人材",
+        "農林水産"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "既存住宅の改修に対して補助します",
+      "labels": [
+        "通常枠の抽選結果・省エネ等枠随時受付中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9026.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "漁業従事者支援事業補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/11624.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-iju"
+      ],
+      "categories": [
+        "農林水産"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "社員研修・製品宣伝活動・知的財産権申請・資格取得に関する補助金(中小企業元気づくり補助金)を交付します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/6438.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-kigyo"
+      ],
+      "categories": [
+        "仕事・人材",
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "移動販売事業で使用する移動販売車の購入や改造にかかる費用を補助します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/21382.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-kigyo"
+      ],
+      "categories": [
+        "創業・お店"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "結婚新生活支援補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13733.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-iju"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "薩摩川内市企業立地支援制度のご紹介",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19851.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "薩摩川内市森林吸収源拡大推進事業補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/11741.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "農林水産"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "薩摩川内市通学定期券等購入費補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13720.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-iju"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "観光客受入施設整備促進補助金のご案内",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19690.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "観光"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "離島高校生の就学を支援します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16871.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "子育て・結婚・学び"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "高齢者見守り確認機器導入費用の一部を補助します",
+      "labels": [
+        "募集中"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19864.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "福祉・健康"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "募集中"
+    },
+    {
+      "title": "<東京圏から移住される皆様>かごしまUIJターン移住支援金",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9011.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "移住・定住"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "DXで“人手不足・非効率”を解消し、稼ぐ力を高める/令和8年度 中小企業DX支援事業",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/16941.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-kigyo"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "セーフティネット保証制度のご案内",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/13478.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-kigyo"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "中小企業災害復旧資金利子補助金",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/6433.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-kigyo"
+      ],
+      "categories": [
+        "企業・経営",
+        "防災"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "中高生ふるさと就職奨励金（中高生UIJターン就職奨励金）のご案内",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/13936.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-koyo"
+      ],
+      "categories": [
+        "移住・定住",
+        "仕事・人材"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "事業承継支援について",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/chikikeizai-chusyokigyo/1/6432.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-kigyo"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "創業・チャレンジ支援補助金",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19720.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "創業・お店"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "北薩地域UIJターン就労促進事業補助金",
+      "labels": [
+        "県_補助金"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/11971.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-koyo"
+      ],
+      "categories": [
+        "移住・定住",
+        "仕事・人材"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "地域や業種の団体による、集客力や売上、経営力の向上の取組みを支援します（地域経済にぎわい創出支援事業補助金）",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19579.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-kigyo"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "団体向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "地方就職支援金（東京圏から就職される皆様に向けた支援金）",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/shigoto_sangyo/koyo_shugyo/202405221/15942.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-koyo"
+      ],
+      "categories": [
+        "仕事・人材"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "奨学金返還支援制度",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13483.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-koyo"
+      ],
+      "categories": [
+        "仕事・人材"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "定住住宅リフォーム補助金",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10782.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家",
+        "移住・定住"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "定住住宅取得補助金",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10781.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家",
+        "移住・定住"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "空き家バンク成約奨励金",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9022.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "緊急保証制度保証料補助金",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19718.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-kigyo"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "自然災害による宅地等の土砂、がれき、樹木等の除去や埋め戻しの工事には補助金があります",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9014.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家",
+        "防災"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "薩摩川内市保育士就職支援金のお知らせ",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/ijuteiju/iju_shien/josei_shien/18578.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-iju"
+      ],
+      "categories": [
+        "子育て・結婚・学び",
+        "仕事・人材"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "薩摩川内市就学定住支援補助金（入学時）",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9019.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "移住・定住",
+        "子育て・結婚・学び"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "薩摩川内市就学定住支援補助金（就職時）",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/10565.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "移住・定住",
+        "子育て・結婚・学び",
+        "仕事・人材"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "観光業等顧客拡大促進事業補助金のご案内",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16225.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "観光"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "農地災害の復旧に関する補助金について",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/12996.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "農林水産",
+        "防災"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "退職金共済制度の掛金の一部を補助します",
+      "labels": [],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/19721.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-kigyo"
+      ],
+      "categories": [
+        "仕事・人材"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "中小企業対策利子補助金 ～交付請求のお知らせ～",
+      "labels": [],
+      "url": "https://sendai-cci.jp/index.php/news/zyosei/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E5%AF%BE%E7%AD%96%E5%88%A9%E5%AD%90%E8%A3%9C%E5%8A%A9%E9%87%91%E3%80%80%EF%BD%9E%E4%BA%A4%E4%BB%98%E8%AB%8B%E6%B1%82%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%EF%BD%9E/",
+      "org": "川内商工会議所",
+      "sources": [
+        "cci-zyosei"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "要確認"
+    },
+    {
+      "title": "令和8年度危険廃屋等解体撤去促進事業補助金のご案内",
+      "labels": [
+        "受付終了"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9023.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家",
+        "防災"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "受付終了"
+    },
+    {
+      "title": "令和9年度地域経済循環創造事業補助金を活用する事業者を募集します",
+      "labels": [
+        "募集終了"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/16796.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "受付終了"
+    },
+    {
+      "title": "木造住宅の耐震診断・改修工事補助金のご案内",
+      "labels": [
+        "受付終了"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/9025.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin"
+      ],
+      "categories": [
+        "住まい・空き家",
+        "防災"
+      ],
+      "target": "個人・家庭向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "受付終了"
+    },
+    {
+      "title": "求人活動広告支援事業補助金",
+      "labels": [
+        "受付終了"
+      ],
+      "url": "https://www.city.satsumasendai.lg.jp/gyoseijoho/hojokin/1/13621.html",
+      "org": "薩摩川内市",
+      "sources": [
+        "city-hojokin",
+        "city-koyo"
+      ],
+      "categories": [
+        "仕事・人材"
+      ],
+      "target": "事業者向け",
+      "updated": null,
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "受付終了"
+    },
+    {
+      "title": "ものづくり・商業・サービス革新補助金",
+      "labels": [],
+      "url": "https://sendai-cci.jp/index.php/news/zyosei/hojokin20150216/",
+      "org": "川内商工会議所",
+      "sources": [
+        "cci-zyosei"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": "2015-02-16",
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "過去のお知らせ"
+    },
+    {
+      "title": "中小企業対策の利子補助制度について",
+      "labels": [],
+      "url": "https://sendai-cci.jp/index.php/news/zyosei/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E5%AF%BE%E7%AD%96%E3%81%AE%E5%88%A9%E5%AD%90%E8%A3%9C%E5%8A%A9%E5%88%B6%E5%BA%A6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/",
+      "org": "川内商工会議所",
+      "sources": [
+        "cci-zyosei"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": "2015-04-21",
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "過去のお知らせ"
+    },
+    {
+      "title": "中小企業者等の設備投資や販路開拓を支援",
+      "labels": [],
+      "url": "https://sendai-cci.jp/index.php/news/zyosei/hojokin20160305/",
+      "org": "川内商工会議所",
+      "sources": [
+        "cci-zyosei"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": "2016-03-05",
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "過去のお知らせ"
+    },
+    {
+      "title": "創業・第二創業促進補助金",
+      "labels": [],
+      "url": "https://sendai-cci.jp/index.php/news/zyosei/sogyo/",
+      "org": "川内商工会議所",
+      "sources": [
+        "cci-zyosei"
+      ],
+      "categories": [
+        "創業・お店"
+      ],
+      "target": "事業者向け",
+      "updated": "2015-03-03",
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "過去のお知らせ"
+    },
+    {
+      "title": "販路開拓をお考えの小規模事業者の皆様へ！！小規模事業者持続化補助金",
+      "labels": [],
+      "url": "https://sendai-cci.jp/index.php/news/zyosei/jizokuka/",
+      "org": "川内商工会議所",
+      "sources": [
+        "cci-zyosei"
+      ],
+      "categories": [
+        "企業・経営"
+      ],
+      "target": "事業者向け",
+      "updated": "2018-04-02",
+      "period": null,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "status": "過去のお知らせ"
+    }
+  ]
+}
