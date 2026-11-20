@@ -10,6 +10,6 @@
 //    ぜったいにここに書かないでください。Supabase の Secrets にだけ置きます。
 // =====================================================================
 window.HOJOKIN_AI = {
-  endpoint: "",
-  key: ""
+  endpoint: "https://mtctyeezzycwqoyfjdmd.supabase.co/functions/v1/hojokin-ask",
+  key: "sb_publishable_ZUDkLIqizJXlLmHA7xw_Fw_QWBKy_vy"
 };
