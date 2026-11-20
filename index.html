@@ -188,6 +188,44 @@
   .empty { background: var(--surface); border-radius: 20px; padding: 28px 20px; text-align: center; color: var(--sub); }
 
   /* セミナー・変更・出典 */
+  /* ジモ君に聞く */
+  section.ai { margin-top: 16px; background: var(--surface); border-radius: 24px; padding: 20px 20px 18px; }
+  .ai-head { display: flex; gap: 14px; align-items: center; }
+  .ai-face { flex: none; width: 56px; height: 56px; }
+  .ai-head h2 { margin: 0; font-size: 1.25rem; font-weight: 900; line-height: 1.3; }
+  .ai-desc { margin: 4px 0 0; color: var(--sub); font-size: .875rem; line-height: 1.6; }
+  .ai-input { position: relative; margin-top: 14px; }
+  .ai-input textarea {
+    width: 100%; border: 2px solid transparent; border-radius: 16px; background: var(--field);
+    padding: 12px 58px 12px 14px; font: inherit; font-size: 1rem; line-height: 1.6; color: var(--ink);
+    min-height: 92px; resize: vertical; outline: none;
+  }
+  .ai-input textarea:focus { border-color: var(--accent); }
+  .ai-mic {
+    position: absolute; right: 8px; top: 8px; width: 44px; height: 44px; border: none; border-radius: 50%;
+    background: var(--surface); color: var(--ink); display: grid; place-items: center; box-shadow: 0 1px 3px rgba(0,0,0,.12);
+  }
+  .ai-mic svg { width: 22px; height: 22px; }
+  .ai-mic[aria-pressed="true"] { background: var(--urgent); color: #fff; animation: aiPulse 1.2s ease-in-out infinite; }
+  @keyframes aiPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(224,49,49,.45); } 50% { box-shadow: 0 0 0 8px rgba(224,49,49,0); } }
+  @media (prefers-reduced-motion: reduce) { .ai-mic[aria-pressed="true"] { animation: none; } }
+  .ai-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 10px; }
+  .ai-count { font-size: .8125rem; color: var(--sub); font-variant-numeric: tabular-nums; }
+  .ai-count.over { color: var(--urgent); font-weight: 700; }
+  .ai-note { margin: 10px 0 0; font-size: .8125rem; color: var(--sub); line-height: 1.6; }
+  .ai-status { margin-top: 12px; font-size: .9375rem; }
+  .ai-status.ng { color: var(--urgent); font-weight: 700; }
+  .ai-thinking { display: flex; align-items: center; gap: 8px; color: var(--sub); font-weight: 700; }
+  .ai-dots span { display: inline-block; width: 6px; height: 6px; margin: 0 2px; border-radius: 50%; background: currentColor; animation: aiDot 1s infinite; }
+  .ai-dots span:nth-child(2) { animation-delay: .15s; } .ai-dots span:nth-child(3) { animation-delay: .3s; }
+  @keyframes aiDot { 0%, 80%, 100% { opacity: .25; } 40% { opacity: 1; } }
+  .ai-answer { margin-top: 14px; display: grid; gap: 10px; }
+  .ai-bubble { border-radius: 18px; padding: 12px 14px; line-height: 1.75; font-size: .9375rem; overflow-wrap: anywhere; }
+  .ai-bubble.q { background: var(--field); justify-self: end; max-width: 90%; border-bottom-right-radius: 6px; }
+  .ai-bubble.a { background: var(--accent-soft); border-bottom-left-radius: 6px; }
+  .ai-bubble.a b { display: block; font-size: .8125rem; color: var(--accent); margin-bottom: 2px; }
+  .ai-bubble a { color: var(--accent); font-weight: 700; word-break: break-all; }
+  .ai-foot { margin: 12px 0 0; font-size: .75rem; color: var(--sub); line-height: 1.6; }
   section.box { margin-top: 24px; background: var(--surface); border-radius: 24px; padding: 20px 22px; }
   section.box h2 { margin: 0 0 4px; font-size: 1.125rem; font-weight: 900; }
   section.box .desc { margin: 0 0 10px; color: var(--sub); font-size: .875rem; }
@@ -249,7 +287,7 @@
     :root { --bg: #fff; --surface: #fff; --field: #fff; --ink: #000; --sub: #444; --line: #bbb; }
     body { font-size: 10.5pt; line-height: 1.5; }
     .wrap { max-width: none; padding: 0; }
-    header.hero, .controls, .fav, .result-head .link-btn, section.box:not(.sources), .toast, dialog { display: none !important; }
+    header.hero, section.ai, .controls, .fav, .result-head .link-btn, section.box:not(.sources), .toast, dialog { display: none !important; }
     .print-head { display: block; margin-bottom: 8pt; }
     .print-head h1 { font-size: 15pt; }
     .print-head p { margin: 2pt 0; font-size: 9pt; }
@@ -299,6 +337,38 @@
     <p class="notice">各ページの見出しや本文から自動で読み取った情報です。対象・金額・締切は、申し込む前に必ずリンク先のページで確かめてください。</p>
     <div id="alerts"></div>
   </header>
+
+  <section class="ai" id="ai" aria-labelledby="aiTitle">
+    <div class="ai-head">
+      <svg class="ai-face" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#FFD43B"/>
+        <path d="M10 26c2-12 12-20 22-20s20 8 22 20c-6-6-14-8-22-8s-16 2-22 8z" fill="#5C3D2E"/>
+        <circle cx="23" cy="33" r="3.2" fill="#1A1C24"/><circle cx="41" cy="33" r="3.2" fill="#1A1C24"/>
+        <circle cx="17" cy="41" r="4" fill="#FF8787" opacity=".7"/><circle cx="47" cy="41" r="4" fill="#FF8787" opacity=".7"/>
+        <path d="M24 43c4 5 12 5 16 0" fill="none" stroke="#1A1C24" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <h2 id="aiTitle">ジモ君に聞いてみる</h2>
+        <p class="ai-desc">補助金のことを質問すると、このサイトのデータをもとに、ジモ君が答えるじゃっど。</p>
+      </div>
+    </div>
+    <form id="aiForm" novalidate>
+      <div class="ai-input">
+        <textarea id="aiQ" maxlength="200" rows="3" placeholder="例：お店を始めるときに使える補助金はある？" aria-label="ジモ君への質問（200文字まで）"></textarea>
+        <button class="ai-mic" id="aiMic" type="button" aria-label="声で質問する" aria-pressed="false" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg>
+        </button>
+      </div>
+      <div class="ai-row">
+        <span class="ai-count" id="aiCount">0 / 200</span>
+        <button class="btn btn-primary" id="aiSend" type="submit">聞いてみる</button>
+      </div>
+      <p class="ai-note">質問内容はサイト改善のため記録します。個人情報は入力しないでください。</p>
+    </form>
+    <div class="ai-status" id="aiStatus" role="status" aria-live="polite"></div>
+    <div class="ai-answer" id="aiAnswer" hidden></div>
+    <p class="ai-foot">ジモ君はAIなので、まちがえることがあります。申し込む前に、必ず元のページで確かめてください。</p>
+  </section>
 
   <section class="controls" aria-label="絞り込み">
     <div class="search">
@@ -676,6 +746,137 @@
       <p style="margin:0">このページは <code>${DATA_URL}</code> を読み込んで表示します。ファイルをダブルクリックして開くと読み込めないので、GitHub PagesのURLか、Codespacesのプレビューで開いてください。</p>
     </li>`;
   });
+})();
+</script>
+<script src="ai-config.js"></script>
+<script>
+// ===== ジモ君に聞く =====
+(() => {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const cfg = window.HOJOKIN_AI || {};
+  const MAX = 200;              // 質問の文字数の上限（Edge Function と同じ）
+  const COOLDOWN_SEC = 30;      // 続けて送れるまでの秒数
+  const form = $("aiForm"), q = $("aiQ"), send = $("aiSend"), mic = $("aiMic");
+  const status = $("aiStatus"), box = $("aiAnswer"), count = $("aiCount");
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch {} }
+  };
+  const escapeHtml = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  // 回答は「ただの文字」として表示し、https のURLだけリンクにする
+  const toHtml = s => escapeHtml(s)
+    .replace(/https:\/\/[^\s<>"'）)」、。]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${u}</a>`)
+    .replace(/\n/g, "<br>");
+  const say = (text, ng = false) => { status.className = "ai-status" + (ng ? " ng" : ""); status.textContent = text; };
+
+  // 準備ができていないとき
+  if (!cfg.endpoint) {
+    q.disabled = true; send.disabled = true;
+    say("ジモ君は準備中じゃっど。もうしばらく待ってね。");
+    return;
+  }
+  if (/^sb_secret_|^sk-ant-/.test(cfg.key || "")) {
+    q.disabled = true; send.disabled = true;
+    say("設定に秘密の鍵が書かれています。危険なので動かしていません。ai-config.js を直してください。", true);
+    return;
+  }
+
+  // 文字数
+  const len = () => [...q.value].length;
+  const updateCount = () => {
+    count.textContent = `${len()} / ${MAX}`;
+    count.classList.toggle("over", len() > MAX);
+  };
+  q.addEventListener("input", updateCount);
+
+  // 続けて送れないようにする（30秒）
+  let timer = null;
+  function cooldownLeft() {
+    const last = Number(store.get("hojokin-ai-last") || 0);
+    return Math.max(0, Math.ceil((last + COOLDOWN_SEC * 1000 - Date.now()) / 1000));
+  }
+  function refreshButton() {
+    const left = cooldownLeft();
+    send.disabled = left > 0 || busy;
+    send.textContent = busy ? "考えちょる…" : left > 0 ? `あと${left}秒` : "聞いてみる";
+    if (left > 0 && !timer) timer = setInterval(() => { refreshButton(); if (!cooldownLeft()) { clearInterval(timer); timer = null; refreshButton(); } }, 1000);
+  }
+
+  // 電話番号やメールアドレスらしきものが入っていたら止める
+  const looksPersonal = s => /[\w.+-]+@[\w-]+\.[\w.]+/.test(s) || /0\d{1,4}[-ー－\s]?\d{1,4}[-ー－\s]?\d{3,4}/.test(s.normalize("NFKC"));
+
+  let busy = false;
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    stopMic();
+    const text = q.value.replace(/\s+/g, " ").trim();
+    if (!text) return say("質問を入れてね。", true);
+    if (len() > MAX) return say(`質問は${MAX}文字までじゃっど。`, true);
+    if (looksPersonal(text)) return say("電話番号やメールアドレスのようなものが入っちょるよ。個人情報は書かないでね。", true);
+    if (cooldownLeft() > 0) return say(`続けて聞くときは、あと${cooldownLeft()}秒待ってね。`, true);
+
+    busy = true; refreshButton();
+    status.className = "ai-status";
+    status.innerHTML = '<span class="ai-thinking">ジモ君が考えちょるじゃっど <span class="ai-dots"><span></span><span></span><span></span></span></span>';
+    store.set("hojokin-ai-last", String(Date.now()));
+    try {
+      const headers = { "Content-Type": "application/json" };
+      if (cfg.key) {
+        headers.apikey = cfg.key;
+        if (/^eyJ/.test(cfg.key)) headers.Authorization = `Bearer ${cfg.key}`;
+      }
+      const res = await fetch(cfg.endpoint, { method: "POST", headers, body: JSON.stringify({ question: text }) });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.answer) throw new Error(data.error || "いまは答えられんじゃっど。時間をおいて、もう一度ためしてね。");
+      box.hidden = false;
+      box.innerHTML = `<div class="ai-bubble q">${escapeHtml(text)}</div><div class="ai-bubble a"><b>ジモ君</b>${toHtml(data.answer)}</div>`;
+      say("");
+      q.value = ""; updateCount();
+    } catch (err) {
+      say(err.message || "いまは答えられんじゃっど。", true);
+    } finally {
+      busy = false; refreshButton();
+    }
+  });
+
+  // ===== 音声入力（Web Speech API） =====
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  let rec = null, listening = false, baseText = "";
+  function stopMic() { if (rec && listening) rec.stop(); }
+  if (SR && window.isSecureContext) {
+    mic.hidden = false;
+    mic.addEventListener("click", () => {
+      if (listening) { stopMic(); return; }
+      rec = new SR();
+      rec.lang = "ja-JP";
+      rec.interimResults = true;     // 話している途中の文字も見せる
+      rec.continuous = false;        // 話し終わったら止まる
+      baseText = q.value ? q.value.trim() + " " : "";
+      rec.onstart = () => { listening = true; mic.setAttribute("aria-pressed", "true"); mic.setAttribute("aria-label", "聞き取りを止める"); say("聞いちょるよ。質問を話してね。"); };
+      rec.onresult = ev => {
+        let heard = "";
+        for (let i = 0; i < ev.results.length; i++) heard += ev.results[i][0].transcript;
+        q.value = [...(baseText + heard)].slice(0, MAX).join("");
+        updateCount();
+      };
+      rec.onerror = ev => {
+        const m = ev.error === "not-allowed" || ev.error === "service-not-allowed"
+          ? "マイクが使えません。ブラウザの設定で、このサイトのマイクを「許可」にしてね。"
+          : ev.error === "no-speech" ? "声が聞こえんかったじゃっど。もう一度ためしてね。"
+          : "うまく聞き取れんかったじゃっど。文字で入れてもらってもいいよ。";
+        say(m, true);
+      };
+      rec.onend = () => {
+        listening = false; mic.setAttribute("aria-pressed", "false"); mic.setAttribute("aria-label", "声で質問する");
+        if (status.textContent.startsWith("聞いちょる")) say(q.value ? "これでよければ「聞いてみる」を押してね。" : "");
+      };
+      try { rec.start(); } catch { say("音声入力を始められんかったじゃっど。文字で入れてね。", true); }
+    });
+  }
+
+  updateCount();
+  refreshButton();
 })();
 </script>
 </body>

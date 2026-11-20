@@ -19,10 +19,18 @@ GitHub Actions が毎週月曜の朝7時に自動で巡回し、一覧を新し�
 | セミナー・相談会 | 川内商工会議所の講演会・相談会のお知らせ |
 | 異常の知らせ | 巡回先が読めない・件数が急に減ったときに、GitHub の Issue で知らせる |
 
+## ジモ君に聞く（AI質問機能）
+
+ページの上の方に、補助金のことをAIの「ジモ君」に質問できる欄があります（音声入力にも対応）。
+設定の手順・使いすぎ対策・iPhoneでの確かめ方・データの流れは、`AI_SETUP.md` を見てください。
+
 ## ファイルの構成
 
 ```
-index.html                    一覧ページ
+index.html                    一覧ページ（ジモ君の質問欄もここ）
+ai-config.js                  ジモ君の Edge Function の URL と公開用の鍵
+AI_SETUP.md                   ジモ君の設定と仕組み
+supabase/                     ジモ君のテーブル（SQL）と Edge Function
 feed.xml                      新着のRSS（巡回のたびに作り直す）
 data/subsidies.json           集めた補助金・セミナーの一覧（巡回のたびに書きかわる）
 data/history.json             変更の記録（巡回のたびに書き足す）
